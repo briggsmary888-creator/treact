@@ -20,15 +20,15 @@ body {
 }
 
 .hero-img {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30x;
 }
 
 .logo-strip {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   opacity: 0.75;
   filter: grayscale(30%);
@@ -72,9 +72,9 @@ body {
 }
 
 .service-card img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 15px;
+  width: 25px;
+  height: 15px;
+  margin-bottom: 25px;
 }
 
 /* --- Pricing Section --- */
@@ -223,7 +223,7 @@ footer {
 .footer-links {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 100px;
 }
 
 .footer-links a {
