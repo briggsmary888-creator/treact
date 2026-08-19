@@ -72,9 +72,10 @@ body {
 }
 
 .service-card img {
-  width: 25px;
-  height: 15px;
-  margin-bottom: 25px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 15px;
+  display: inline-block;
 }
 
 /* --- Pricing Section --- */
