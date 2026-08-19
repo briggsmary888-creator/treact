@@ -76,7 +76,7 @@ body {
   height: 48px;
   margin-bottom: 15px;
   display: inline-block;
-  vertical-align; top;
+  vertical-align: top;
   margin: 0 15px;      /* Adds spacing left and right */
 }
 
