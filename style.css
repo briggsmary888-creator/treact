@@ -1,19 +1,416 @@
-@import url('https://googleapis.com');
+@import url("https://googleapis.com");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(99, 102, 241);
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: rgb(31, 41, 55);
+  margin-bottom: 16px;
+}
+
+p {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(75, 85, 99);
+  max-width: 600px;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+img {
+  border: 2px solid rgb(226, 232, 240);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+div {
+  background-color: lightgray;
+  width: 400px;
+  border: 4px solid blue;
+  padding: 90px;
+  margin: 50px;
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(99, 102, 241);
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: rgb(31, 41, 55);
+  margin-bottom: 16px;
+}
+
+p {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(75, 85, 99);
+  max-width: 600px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+img {
+  border: 2px solid rgb(226, 232, 240);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px 30px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -1px;
+  transition: transform 0.2s;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+p {
+  margin: 0px;
+  font-size: 16px;
+  color: rgb(75, 85, 99);
+  line-height: 1.5;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -1px;
+  transition: transform 0.2s;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+p {
+  margin: 0px;
+  font-size: 16px;
+  color: rgb(75, 85, 99);
+  line-height: 1.5;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -1px;
+  transition: transform 0.2s;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+p {
+  margin: 0px;
+  font-size: 16px;
+  color: rgb(75, 85, 99);
+  line-height: 1.5;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -1px;
+  transition: transform 0.2s;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+p {
+  margin: 0px;
+  font-size: 16px;
+  color: rgb(75, 85, 99);
+  line-height: 1.5;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -1px;
+  transition: transform 0.2s;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+p {
+  margin: 0px;
+  font-size: 16px;
+  color: rgb(75, 85, 99);
+  line-height: 1.5;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -1px;
+  transition: transform 0.2s;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+p {
+  margin: 0px;
+  font-size: 16px;
+  color: rgb(75, 85, 99);
+  line-height: 1.5;
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  gap: 20px;
+  width: auto;
+  max-width: 1000px;
+  padding: 40px;
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(99, 102, 241);
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: rgb(31, 41, 55);
+  margin-bottom: 16px;
+}
+
+p {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgb(75, 85, 99);
+  max-width: 600px;
+}
+
+body {
+  flex-wrap: nowrap;
+  width: auto;
+}
+
+div {
+  width: auto;
+  max-width: 400px;
+  margin: 2px auto;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
   color: #2d3748;
-  
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content; /* Or a specific width */
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+ 
+  }
+
+section {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.my-box {
+border: 2px blue;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.pricing-card {
+  width: auto;
+  min-width: 250px;
+}
+
+.pricing-card.featured {
+  width: auto;
+  min-width: 250px;
+}
+
+.pricing-card {
+  width: auto;
+  min-width: 250px;
 }
 
 /* --- Hero & Header --- */
 .hero-header {
-  text-align: center;
+  text-align: auto;
   padding: 40px 20px;
   background-color: #ffffff;
 }
@@ -31,6 +428,106 @@ body {
   height: auto;
   opacity: 0.75;
   filter: grayscale(30%);
+}
+
+.container {
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-around;
+  align-items: center; /* Keeps all boxes the same height */
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Section Layout */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Feature Item */
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-2px);
+}
+
+.feature-item img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.feature-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.Container {
+  width: auto;
+  margin: 0px;
+}
+
+p {
+  width: auto;
+  margin: 0px;
+}
+
+p {
+  width: auto;
+  margin: 0px;
+}
+
+p {
+  width: auto;
+  margin: 0px;
+}
+
+p {
+  width: auto;
+  margin: 0px;
+}
+
+p {
+  width: auto;
+  margin: 0px;
+}
+
+p {
+  width: auto;
+  margin: 0px;
+}
+
+/* Styles the individual boxes */
+.Container > div {
+  background-color: #ffffff; /*White background for the box */
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 8px; /*Rounder corners */
+  padding: 24px; /* Spacing inside the box */
+  text-align: center; /* Centers the icon and text */
+  width: 220px; /* Sets a fixed width for the boxes */
 }
 
 /* --- Services Section --- */
@@ -76,7 +573,7 @@ body {
   margin-bottom: 15px;
   display: inline-block;
   vertical-align: top;
-  margin: 0 15px;      /* Adds spacing left and right */
+  margin: 0 15px; /* Adds spacing left and right */
 }
 
 /* --- Pricing Section --- */
@@ -85,9 +582,30 @@ body {
   background-color: #edf2f7;
 }
 
+.pricing-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* This centers all horizontally */
+}
+
 .pricing-section {
   text-align: center;
-  margin-bottom: 40px;
+  height: 2px;
+  margin-bottom: 400px;
+  vertical-align: auto;
+  align-items: pricing;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+div#pricing-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding: 40px 0px;
 }
 
 .pricing-section h2 {
@@ -203,6 +721,11 @@ body {
 
 .pricing-btn:hover {
   opacity: 0.9;
+}
+
+.price {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* --- Footer --- */
