@@ -712,6 +712,13 @@ div#pricing-container {
   color: #ffffff;
 }
 
+.pricing-card {
+  box-sizing: border-box; /* Includes padding in total width calculation */
+  padding: 24px;          /* Adds internal breathing room for text */
+  word-wrap: break-word;  /* Forces long words tobreak instead of overflowing */
+  overflow: hidden;       /* Keeps anything rogue strictly inside the box */  
+}
+
 .pricing-btn:hover {
   opacity: 0.9;
 }
@@ -725,7 +732,7 @@ div#pricing-container {
 footer {
   background-color: #0a7978;
   color: #a0aec0;
-  padding: 30px 20px;
+  padding: 20px 20px;
 }
 
 .footer-content {
@@ -753,6 +760,12 @@ footer {
 .footer-links a:hover {
   color: #ffffff;
 }
+
+.footer-content {
+  width: 100%;
+  padding: 40px 20px; /* Reduced padding for better layout */
+}
+
 /* 1. Layout the boxeshorizontally across the page */features-container {
    display: Flex;
    flex-direction: row;
