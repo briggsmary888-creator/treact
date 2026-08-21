@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes unwanted bottom spacing/gaps */
+}
+
 h2 {
   font-family: Montserrat, sans-serif;
   font-size: 14px;
@@ -26,7 +32,7 @@ h3 {
 
 p {
   font-family: Inter, sans-serif;
-  font-size: 18px;
+  font-size: 40px;
   line-height: 1.6;
   color: rgb(75, 85, 99);
   max-width: 600px;
@@ -523,7 +529,7 @@ p {
 /* Styles the individual boxes */
 .Container > div {
   background-color: #ffffff; /*White background for the box */
-  border: 1px solid #e0e0e0; /* Light gray border */
+  border: 1px solid #221842; /* Light gray border */
   border-radius: 8px; /*Rounder corners */
   padding: 24px; /* Spacing inside the box */
   text-align: center; /* Centers the icon and text */
