@@ -5,15 +5,9 @@
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Removes unwanted bottom spacing/gaps */
-}
-
 h2 {
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -38,10 +32,6 @@ p {
   max-width: 600px;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   min-height: 100vh;
   display: flex;
@@ -55,7 +45,7 @@ footer {
 }
 
 img {
-  border: 2px solid rgb(226, 232, 240);
+  border: 20px solid rgb(226, 232, 240);
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   padding: 8px;
@@ -521,10 +511,7 @@ p {
   margin: 0px;
 }
 
-p {
-  width: auto;
-  margin: 0px;
-}
+
 
 /* Styles the individual boxes */
 .Container > div {
@@ -736,7 +723,7 @@ div#pricing-container {
 
 /* --- Footer --- */
 footer {
-  background-color: #1a202c;
+  background-color: #0a7978;
   color: #a0aec0;
   padding: 30px 20px;
 }
@@ -765,4 +752,13 @@ footer {
 
 .footer-links a:hover {
   color: #ffffff;
+}
+/* 1. Layout the boxeshorizontally across the page */features-container {
+   display: Flex;
+   flex-direction: row;
+   justify-content: center; /* Centers the boxeson the page */
+   gap: 24px;
+   width: 100%;
+   padding: 20px;
+   box-sizing: border-box;
 }
