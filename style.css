@@ -257,6 +257,21 @@ ul.pricing-features {
   justify-content: flex-start;
 }
 
+@media (max-width: 768px) {
+  .navbar-container{
+    flex-direction: column;  /* Stacks logo on top, menu below */
+    gap: 16px;               /* Adds breathing room between logo and links */
+    padding: 16px;
+}
+
+.nav-links {
+  flex-direction: column;  /* Stacks links vertically */
+  gap: 12px;               /* Tighter spacing for thumb-tapping */
+  width: 100%;
+  text-align: center;
+  }
+}
+
 /* Resposive layout for screen smaller the 768px */
 @media (max-width: 768px) {
   .div-feature-section {
