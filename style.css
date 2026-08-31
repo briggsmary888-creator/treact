@@ -38,8 +38,16 @@
   transition: color 0.2s ease;
 }
 
-.nav-links a:hoveer {
+.nav-links a:hover {
   color: #1a202c; /* Darker color on hover to match logo */
+}
+
+.banner-logo {
+  display: block;            /* Allows margin to center it */
+  max-width: 180px;          /* Restricts the logo from getting too large */
+  height: auto;              /* Keeps the originalimage proportions intact */
+  margin: 0 auto 24px auto;  /* Centers horizontally and adds space underneath */
+  object-fit: contain;       /* Ennsures the image scales cleanly without clipping */
 }
 
 .banner-section {
@@ -49,7 +57,7 @@
 }
 
 .banner-section h2 {
-  font-size: 42px;
+  font-size: 48px;
   color: #1a202c;    /* Matching your deep dark logo color */
   margin: 16px;
 }
@@ -62,7 +70,7 @@
 }
 
 .services-container {
-  display: flex;
+  display: center;
   flex-wrap: wrap;         /* Allows elements to drop to the next line if crowded */ 
   justify-content: center; /* Centers the service items on the row */
   gap: 24px;               /* Spacing between each service box */
