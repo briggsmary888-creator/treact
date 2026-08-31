@@ -141,6 +141,7 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   height: 100%;
 }
 
+
 /* Forces image and text block to sit horizontally side-by-side */
 .feature-cars {
   display: flex;
@@ -148,6 +149,7 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   align-items: center; /* Verically center the text with the image */
   gap: 15px; /* Adds space between the image and the text */
 }
+
 
 /* Optional sizing to keep your image consistent */
 .feature-img {
