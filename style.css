@@ -19,11 +19,13 @@
   padding: 0 24px;
 }
 
+
+
 /* Applied to the container */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 4px;
 }
 
 /* Applied to each new wrapper group */
@@ -41,7 +43,7 @@
 }
 
 .nav-logo {
-  font-size: 2px;
+  font-size: 24px;
   font-weight: 700;
   color: #1a202c;
   text-align: center;
@@ -87,19 +89,33 @@
   margin: 0;
   padding: 0;
 }
-
 .nav-links a {
   text-decoration: none;
   color: #4a5568;
   font-weight: 500;
   transition: color 0.2s ease;
 }
-
 .nav-links a:hoveer {
   color: #3182ce; /* Match button color on hover */
 }
+/* Container holding your text and the image side-by-side */
+.fun-section-container {
+  display: flex;
+  align-item: center; /* Centers item vertically */
+  justify-content: center; /* Centers the content block horizontally */
+  gap: 20px;       /* Adds clean spacing between the image and text */
+  max-width: 1200px     /* Keeps layout contained on wide screens */
+  margin: 0 auto;       /* Centers the entire container on the page */
+}
 
-.run-section-container {
+/* Specific styling for the image inside this container */
+.fun-section-container img {
+  max-width: 45%;     /* Prevents the image from taking up too much room */
+  height: auto;    /* Maintains original aspect ratio */
+  order: -1;      /* Forces the image to the left of the text */       
+}
+
+.fun-section-container {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -145,11 +161,17 @@ img {
 }
 
 .section-heading {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex-wrap: wrap;
   gap: 1rem;
+  align-items: auto;
+  justify-content: flex-start;
+}
+
+/* Image styling */
+.left-image {
+  float: left;
+  margin-right: 20px; /* Pushes te
 }
 
 h2 {
