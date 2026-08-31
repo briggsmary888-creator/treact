@@ -51,9 +51,12 @@
 }
 
 .banner-section {
-  background-color: #f7fafc;   /* Soft grey background color */
-  padding: 80px 24px;            /* Generous spacing top and bottom */
-  text-align: center;            /* Centers the header text and paragraphs */
+  background-color: #f7fafc;   
+  padding: 80px 24px;
+  display: flex;            
+  text-decoration: column;  /* Stacks elements vertically */
+  align-items: center;    /* Centers elements horizontally */
+  text-align: center;
 }
 
 .banner-section h2 {
