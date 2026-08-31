@@ -97,40 +97,15 @@
   color: #3182ce; /* Match button color on hover */
 }
 /* Container holding your text and the image side-by-side */
-.fun-section-container {
+.img-section-container {
   display: flex;
-  align-item: center; /* Centers item vertically */
-  justify-content: center; /* Centers the content block horizontally */
-  gap: 20px;       /* Adds clean spacing between the image and text */
-  max-width: 1200px     /* Keeps layout contained on wide screens */
-  margin: 0 auto;       /* Centers the entire container on the page */
-}
-
-/* Specific styling for the image inside this container */
-.fun-section-container img {
-  max-width: 45%;     /* Prevents the image from taking up too much room */
-  height: auto;    /* Maintains original aspect ratio */
-  order: -1;      /* Forces the image to the left of the text */       
-}
-
-.fun-section-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.img-wrapper {
-  flex: 1 1 0%;
+  align-items: flex-start; /* Fix: Aligins text perfectly with the Top of the image */
+  gap: 20px;              /* Pushes the text away from the image */
+  flex-wrap: nowrap;      /* Fix: Prevents the text from stacking below the image */
 }
 
 .text-wrapper {
   flex: 1 1 0%;
-}
-
-section.feature-section {
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 .feature-grid {
@@ -153,7 +128,7 @@ body {
   align-items: flex-start;
 }
 img {
-  max-width: 100%; /* Preventesthe image from being wider than its container */
+  max-width: 100%; /* Preventes the image from being wider than its container */
   height: auto;  /* Maintains the original aspect ratio so it doesn't stretch */
 display: block;  /* Removes unwanted whitespace/gaps at the bottom of the image */
 }
@@ -182,30 +157,6 @@ ul.pricing-features {
   justify-content: flex-start;
 }
 
-/* Image styling */
-.left-image {
-  float: left;
-  margin-right: 20px; /* Pushes te
-}
-
-h2 {
-  margin: 0px;
-  max-width: 600px;
-}
-
-button {
-  margin-top: 0.5rem;
-}
-
-p {
-  margin: 0px;
-  max-width: 600px;
-}
-
-button {
-  margin-top: 0.5rem;
-}
-
 /* Resposive layout for screen smaller the 768px */
 @media (max-width: 768px) {
   .div-feature-section {
@@ -230,62 +181,12 @@ button {
   transition: transform 0.2s ease; box-shadow: 0.2s ease;
 }
 
-.feature-grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
-.feature-grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
-.feature-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .heading-content-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
 }
-
-.feature-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.feature-section p {
-  text-align: center;
-}
-
-/* 3. Lift the card slightly when hovered */
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0, 10px 15px rgba(0,0,0,0.1);
-}
-
-/* 4. Style the cardtext */
-.feature-card h3 {
-  margin: 0;
-  color: #333333;
-}
-.feature-card p {
-  color: #666666;
-  margin: 0;
-}
-
-/* Push down your main content body so the navbar doesn't block it */
-body {
-  padding-top: 70px;
-}
-
 /* Subscribe Form Section Styles */
 .subscribe-section {
   background-color: #ebf8ff; /* Light soft blue accent color */
@@ -347,25 +248,6 @@ body {
   }
 }
 
-/* Styling headings inside text content blocks */
-.text-content h2, h3, h4 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #1a202c; /* Deep slate charcoal color */
-  margin-top: 0;
-  margin-bottom: 16px; /*Clean spacing below heading */
-}
-
-/* Styling paragraph body text */
-.text-content p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #4a5568; /* Readable dark grey color */
-  margin-top: 0;
-  margin-bottom: 24px; /* Roomy spacing below text */
-}
-
 /* Style for the button link */
 .cta-button {
   display: inline-block; /* Allows padding and dimensions to apply properly */
@@ -389,51 +271,6 @@ body {
   transform: scale(0.98); /* Subtle button press compression effect */
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  font-family: 'inter', system-ui, -apple-system, Arial, sans-serif;
-  color: #333333;
-}
-
-/* Stacks elements vertically and centers them */
-.feature-card {
-  display: flex;
-  flex-direction: column; /* Stacks h2, image, and p verically */ 
-  align-items: center;    /* Centers the image and text blocks horizontally */
-  text-align: center;     /* Ensures the text inside h2 and pis centered */
-  gap: 15px;              /*Adds clean spacing between the elements */
-}
-
-
-/* Container holding your text/image pairs */
-.media-container {
-  max-width: 1140;
-  margin: 40px auto;
-  padding: 0 24px;
-}
-
-/* Flexbox layout for the image and texi pair */
-.media-block {
-  display: flex; /* Positions image and textside-by-side */
-  align-items: center; /* vertically center the text to the image */
-  gap: 40px; /* Adds consistent spacing betweenthe image and the text */
-  margin: 60px;
-}
-
-/* Standardize your image sizing */
-.inline-image {
-  max-width: 450px;
-  width: 100%;
-  height: auto;
-  border-radius: 8px; /* Optional: smooths out sharp corners */
-}
-
-.text-content {
-  flex: 1; /* Allows the text box to fill the remaining space evenly */
-}
-
 /* 
 responsive override for moble screens */
 @media (max-width: 768px) {
@@ -444,54 +281,12 @@ responsive override for moble screens */
    }
 }
 
-h1 {
-  color: #333333;
-  text-align: center;
-}
-
-.pricing-card {
-  background: white;
-}
-
-#main-hero {
-  padding: 40px;
-}
-
-:root {
-  --primary-color: #007bff;
-}
-
 /* Moblie responsive layout */
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
     text-align: center;
   }
-}
-
-/* 1. Grid layout conainer */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal desktpocolumns */
-  gap: 24px;                             /* Perect spacing between cards */
-  padding: 40px;
-}
-
-/* 2. Interactive Card with Hover Effects */
-.card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-
-  /* Smooth transitionfor hover effects */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover State */
-.card:hover {
-  transform: translateY(-5px); /* Smoothly lifts the card up */
-  box-shadow: 0 12px 20px rgba(0,0,0,0.15); /* Deepens shadow */
 }
 
 /* 3. Advanced Responsive Breakpoint (Responsive Layout) */
@@ -508,107 +303,8 @@ h1 {
   }
 }
 
-/* =========================================
-   2. Card Section Base Style (Desktop Frist)
-   ========================================= */
-
-   .card-container {
-    display: flex;            /* Your preferred layout model */
-    flex-wrap: wrap;          /* Allows rows to break cleanly */
-    justify-content: center;  /* Centers the cards horizontally */
-    gap: 24px;                /* Adds clean spacing between elements */
-    max-width: 1200;          /* Keepsthe section bound on wide screen */
-    margin: 0;                /* Centers the entire container */ 
-    padding: 40px 24px;
-   }
-
-   /* Base styles for individual cards */
-   .pricing-card .card {
-     flex: 1 1 cala(33.333% - 24px); /* Default 3-column layout on desktop */
-     min-width: 280px;               /* Prevents card from getting too squished */
-     max-width: 360px;
-     background-color: #ffffff;
-     border: 1px solid #e2e8f0;
-     border-radius: 8px;
-     padding: 24px;
-     box-shadow: 0, 4px, 6px, -1px, rgba(0,0,0,0.1);
-     transition: transform 0.2s ease, box-shadow 0.2s ease;
-   }
-
-   /* Hover state from line 50 of your file */
-   .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0, 10px, 15px, -3px, rgba(0,0,0,0.1);
-   }
-
-   /* ======================================
-      4. Footer Layout & Styling
-      ====================================== */
-
-/* Stacks elements vertically and centers them */
-.feature-card {
-  display: flex;
-  flex-direction: column; /* Stacks h2, image, and p verically */ 
-  align-items: center;    /* Centers the image and text blocks horizontally */
-  text-align: center;     /* Ensures the text inside h2 and pis centered */
-  gap: 15px;              /*Adds clean spacing between the elements */
-}
 
 
-      
-.footer {
- background-color: #f7fafc;        /* Professional soft grey background */
- padding: 60px, 24px;
- margin: 80px;                       /* Pushes the footer away from content */
- border-top: 1px, solid #e2e8f0;
-}
-
-      .footer-container {
-        max-width: 1140px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);  /* 5 clean columns for layout links */
-        gap: 40px;
-      }
-
-      /* Base styling for text elements inside the footer */
-      .footer-column h2 {
-        font-size: 14px;
-        text-transform:  uppercase;
-        letter-spacing: 1px;
-        color: #2d3748;
-        margin-bottom: 20px;
-      }
-
-      .footer-column ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .footer-column ul li {
-        margin-bottom: 12px;
-      }
-      .footer-column ul li a {
-        color: #718096;
-        text-decoration: none;
-        font-size: 14px;
-        transition: color 0.2s ease;
-      }
-
-      .footer-column ul li a:hover {
-        color: #4a5568;             /* Clean subtle color change on hover */
-      }
-
-      /* Responsive stack for mobile views */
-      @media (max-width: 768px) {
-        .footer-container {
-          grid-template-columns: 1fr;   /* Stacks everything into a single column */
-          gap: 30px;
-          text-align: center;           /* Centers text for clean presentation */
-        }
-      }
-   
 
 /* Desktop view layout */
 .footer-container {
