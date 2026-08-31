@@ -72,6 +72,19 @@
   margin: 0 auto 24px auto;   /* Centers the paragraph block */
 }
 
+h2.features-main-heading {
+  text-align: center;
+}
+
+p.features-main-subtext {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+
+}
+
 .services-container {
   display: center;
   flex-wrap: wrap;         /* Allows elements to drop to the next line if crowded */ 
