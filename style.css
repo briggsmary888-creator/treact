@@ -113,12 +113,12 @@
   flex: 1 1 0%;
 }
 
-.feature-section h2{
-  text-align: center;
-}
 
-.feature-section p {
-  text-align: center;
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  place-items: center; /* This centers items both ways */
 }
 
 body {
@@ -128,25 +128,65 @@ body {
   text-align: center;
 }
 
-
-
-.div-feature-section {
-  /* 1. turn the container into a grid */
-  display: grid;
-
-  /* 2. Create 3 equal-width columns */
-  grid-template-columns: repeat(3,1fr);
-
-  /* 3 Adds spacing between the columns */
+.section-heading {
+  display: flex;
   gap: 20px;
+  align-items: flex-start;
+}
 
-  /* 4. Centers the items inside the gridcells */
-  justify-items: center;
+img {
+  flex-shrink: 0;
+  width: auto;
+  max-width: 50%;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
 
-  /* 5. Centers the entire grid container onthe webpage */
-  max-width: 1200px;
-  margin: 0 auto;
+h2 {
+  margin: 0px;
+  max-width: 600px;
+}
+
+p {
+  margin: 0px;
+  max-width: 600px;
+}
+
+button {
+  margin-top: 0.5rem;
+}
+
+p {
+  margin: 0px;
+  max-width: 600px;
+}
+
+button {
+  margin-top: 0.5rem;
+}
+
+p {
+  margin: 0px;
+  max-width: 600px;
+}
+
+button {
+  margin-top: 0.5rem;
+}
+
+p {
+  margin: 0px;
+  max-width: 600px;
 }
 
 /* Resposive layout for screen smaller the 768px */
