@@ -61,6 +61,33 @@
   margin: 0 auto 24px auto;   /* Centers the paragraph block */
 }
 
+.services-container {
+  display: flex;
+  flex-wrap: wrap;         /* Allows elements to drop to the next line if crowded */ 
+  justify-content: center; /* Centers the service items on the row */
+  gap: 24px;               /* Spacing between each service box */
+  padding: 60px 24px;
+  max-width: 1200;
+  margin: 0 auto;
+}
+
+.service-card {
+background-color: #ffffff;          /* Subtle border around customization elements */
+bottom: 1px solid #e2e8f0;
+border-radius: 8px;
+padding: 24px;
+width: 280px;                         /* Fixed width ensures they line up in clean rows */
+text-align: center;
+box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Sizing the customize icons uniformly */
+.service-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
 .feature {
     color-scheme: light dark;
     user-select: none;
