@@ -1,6 +1,7 @@
 .nav-log {
-  display: center;
+  display: flex;
   /* Optional: center it if needed */
+  justify-content: center;
   margin: 0 auto; 
 }
 
@@ -9,7 +10,6 @@
   font-weight: 700;
   color: #1a202c;
   text-align: center;
-  justify-items: auto;
 }
 
 .nav-links {
@@ -18,6 +18,16 @@
   gap: 32px;
   margin: 0;
   padding: 0;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Pushes logo to the left, links to the right */
+  align-items: center;    /* Centers them vertically */
+  padding:  16px  32px;   /* Adds spacing around the navbar */
+  max-width: 1200;   /* Keeps content from stretching too wide */
+  margin: 0 auto;    /* Centers the entire navbar layouton big screen */
 }
 
 .nav-links a {
