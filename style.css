@@ -30,23 +30,39 @@
   margin: 0 auto;    /* Centers the entire navbar layouton big screen */
 }
 
+/* Style the text links inside the list items */
 .nav-links a {
   text-decoration: none;
-  color: #4a5568;
+  color: #4a5568;    /* Soft gray text */
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hoveer {
-  color: #3182ce; /* Match button color on hover */
+  color: #1a202c; /* Darker color on hover to match logo */
 }
 
 .banner-section {
-  display: flex;
+  background-color: #f7fafc;   /* Soft grey background color */
+  padding: 80px 24px;            /* Generous spacing top and bottom */
+  text-align: center;            /* Centers the header text and paragraphs */
+}
+
+.banner-section h2 {
+  font-size: 42px;
+  color: #1a202c;    /* Matching your deep dark logo color */
+  margin: 16px;
+}
+
+.banner-section p {
+  font-size: 18px;
+  color: #4a5568;     /* Soft body text color */
+  max-width: 600;
+  margin: 0 auto 24px auto;   /* Centers the paragraph block */
 }
 
 .feature {
-       color-scheme: light dark;
+    color-scheme: light dark;
     user-select: none;
     height: 12290px;
     width: 1141px;
@@ -60,8 +76,8 @@
 
 /* Applied to each new wrapper group */
 .feature-item {
-  display: flex;
-  flex-direction: column;
+  display: column;
+  flex-direction: center;
   justify-content: space-between;
   height: 100%;
 }
@@ -69,7 +85,7 @@
 /* Forces image and text block to sit horizontally side-by-side */
 .feature-cars {
   display: flex;
-  flex-direction: row; /* Keeps elements horizontally side-by-side */
+  flex-direction: column; /* Keeps elements horizontally side-by-side */
   align-items: center; /* Verically center the text with the image */
   gap: 15px; /* Adds space between the image and the text */
 }
