@@ -439,6 +439,31 @@ responsive override for moble screens */
   }
 }
 
+.footer-grid {
+  display: grid;
+  /* Create exactly 4 equal horizontal columns */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* Controls the spacing between columns and rows */
+  gap: 20px;
+
+  /* Removes defualt bullet points and indents */
+  list-style-type: none;
+  padding: 0;
+  margin: 0; 
+}
+
+/* Optional styling to make your links look clean */
+.footer-grid a {
+  text-decoration: none;
+  color: #243e63; /* Matches standard dark blue text */
+  font-family: sans-serif;
+}
+
+.footer-grid a:hover {
+  text-decoration: underline;
+}
+
 .footer-section {
     color-scheme: light dark;
     user-select: none;
