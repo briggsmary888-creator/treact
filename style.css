@@ -460,6 +460,113 @@ responsive override for moble screens */
   font-family: sans-serif;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  list-style: none;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
+li {
+  display: block;
+  margin: 0px;
+}
+
 .footer-grid a:hover {
   text-decoration: underline;
 }
@@ -518,4 +625,12 @@ footer {
 
 .footer-column ul li {
   margin-bottom: 12px;
+}
+
+p {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
