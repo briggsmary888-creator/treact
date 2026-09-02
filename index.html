@@ -7,6 +7,51 @@
   <!-- Replace "style.css" withthe exact path and name of your CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+  /* This styles the container/box */
+  .price-box {
+    border: 2px solid #e0e0e0; /* light gray border */
+    border-radius: 8px; /* rounded corners */
+    padding: 20px; /* space inside the box */   
+    width: 300px; /* fixed width */
+    text-align: center; /* center the text */
+    font-family: Arial, sans-serif; /* font style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  }
+
+  /* This styles the price itself */
+  .price {
+    font-size: 2em; /* larger font size */
+    color: #333; /* dark gray color */
+    margin: 10px 0; /* space above and below */
+  }
+
+/* This styles the "Buy Now" button */
+  .buy-now-button {
+    background-color: #007BFF; /* blue background */
+    color: white; /* white text */
+    border: none; /* no border */
+    padding: 10px 20px; /* space inside the button */
+    border-radius: 5px; /* rounded corners */
+    cursor: pointer; /* pointer cursor on hover */
+    font-size: 1em; /* font size */
+  }
+
+  .buy-now-button:hover {
+    background-color: #0056b3; /* darker blue on hover */
+  }
+</style>
+</head>
+<body>
+
+  <!-- The Pricing Box Content -->
+   <div class="price-box">
+    <h2>Basic Plan</h2>
+    <div class="price">$19.99</div>
+    <p>per month</p>
+    <button class="buy-now-button">Buy Now</button>
+</body>
+</html>
 
 <media name="viewport" content="width=device-width,initial-scale=1.0>"
 
@@ -88,76 +133,55 @@
   <div>   
   <img src="assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg">
    
-<section class="value">
-    <div class="value-container"></div>
+  <!-- 1. The Main Container Block -->
+   <div id="pricing" class="pricing"></div>
       <h2>Pricing</h2>
       <p>Reasonable & Flexible Plans.</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dignissimos, ab reiciendis voluptatem delectus dolores. At enim vero repellat magnam. Fuga, qui quo. Sunt fugit nesciunt animi aliquid iste ducimus.</p>  
              <button>Learn more</button>
-
-    <!-- 1. The Main Container Block -->
-    <div class="pricing-card 1.">
-            <h2>Starter</h2> 
-            <div class="price">$19<span>/mo</span></div>
-            <p class="pricing-description">Perfect for trying things out.</p>
-           </div>
-
-        <div class="pricing-card pricing-card-2">
-           <h2>Pro</h2>
-           <div class="price">$49<span>/mo</span></div>
-           <p class="pricing-desc">Ideal for growing teams requiring advanced features.</p>
-        </div>
-
-        <div class="pricing-card pricing-card-3">
-          <h2>Enterprise</h2>
-          <div class="price">$99<span>/mo</span></div>
-          <p class="pricing-desc">Built for scale, custom integrations, and large operations.</p>
-            <ul class="pricing-features">
-               <li> 30 Templates</li>
-               <li> 7 Landing Pages</li>
-               <li> 12 Internal Pages</li>
-               <li> Basic Assistance</li>
-            </div>
-
-           </ul>
-           <button class="pricing-btn">Contact Sales</button>
-          <ul class="pricing-features">
-             <li>60 Templates</li>
-             <li>15 Landing Pages</li>
-             <li>22 Internal Pages</li>
-             <li>Priority Assistance</li>
-         </ul>   
-         <button class="pricing-btn">Contact Sales</button>
-          <ul class="pricing-features">
-            <li>90 Templates</li>
-            <li>27 Landing Pages</li>
-            <li>37 Internal Pages</li>
-            <li>Personal Assistance</li>
-        </ul>
-           <button class="pricing-btn">Contact Sales</button>
-  
-<!-- Main Container Grid -->
- <div> class="pricing-container" style=display: flex; gap: 20px;justify-content: center; flex-wrap:">
-
-      <!-- Card 1 -->
-       <div class="pricing-card" style="border: 1px solid #ccc; padding: 20px; border-radius: 8px; width:250px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <p class="pricing-description">Perfect for trying things out.</p>
- </div>
-
+</div>
+            <!-- Card 1 -->
+       <div class="pricing-card 2">
+             <h2>Personal</h2> 
+            <div class="price">$17<span>/mo</span></div>
+            <p class="pricing-description"><a For individuals.</a></p>
+           <ul>
+            <li>30 Templates</li>
+            <li>7 landing Pages</li>
+            <li>12 Internal Pages</li>
+            <li>Basic Assistance</li>
+                <button class="pricing-btn">Buy Now</button>
+               </ul>
+            </ul>
+        </div> 
+        
      <!-- Card 2 -->
-     <div class="pricing-card" style="border: 1px solid #ccc; padding: 20px; border-radius: 8px; width:250px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <p class="pricing-description">Ideal for growing teams requiring advanced features.</p>
-     </div>
+        <div class="pricing-card 2">
+           <h2>Bussiness</h2>
+           <div class="price">$37.99<span>/mo</span></div>
+           <p class="pricing-description"><a For small businesses.</a></p>
+           <ul>
+               <li>60 Templates</li>
+               <li>15 Landing Pages</li>
+               <li>22 Internal Pages</li>
+               <li>Priority Support</li>
+           <button class="pricing-btn">Buy Now</button>
+              </ul>
+              </div>
+           <!-- Card 3 -->
+     <div class="pricing-card 3">
+      <h2>Enterprise</h2>
+      <div class="price">$57.99<span>/mo</span></div>
+      <p class="pricing-description"><a For large Companies.</a></p>
+          <ul class="pricing-card"> 
+          <li>90 Templates</li>
+          <li>27 Landing Pages</li>
+          <li>37 Internal Pages</li>
+          <li>Personal Assistance</li>
+           <button class="pricing-btn">Buy Now</button>
+          </ul>
+          </div>
 
-     <!-- Card 3 -->
-     <div class="pricing-card" style="border: 1px solid #ccc; padding: 20px; border-radius: 8px; width:250px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <p class="pricing-description">Built for scale, custom integrations, and large operations.</p>
-     </div>
-
- </div>
-</pricing>
-</section>
-<div>
   <section>
           <img src="assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"> </img>
           <a class="cta-content"></a>
