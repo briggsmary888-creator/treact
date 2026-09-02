@@ -95,33 +95,30 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dignissimos, ab reiciendis voluptatem delectus dolores. At enim vero repellat magnam. Fuga, qui quo. Sunt fugit nesciunt animi aliquid iste ducimus.</p>  
              <button>Learn more</button>
 
- <div>     
-<section class="pricing-section">
-  <h2>Our Pring Plans</h2>
-
-  <div class="pricing-container">
     <!-- 1. The Main Container Block -->
-
-        <div class="pricing-card 1.">
+    <div class="pricing-card 1.">
             <h2>Starter</h2> 
             <div class="price">$19<span>/mo</span></div>
             <p class="pricing-description">Perfect for trying things out.</p>
+           </div>
 
-        <div class="pricing-card 2.">
+        <div class="pricing-card pricing-card-2">
            <h2>Pro</h2>
            <div class="price">$49<span>/mo</span></div>
            <p class="pricing-desc">Ideal for growing teams requiring advanced features.</p>
+        </div>
 
-        <div class="pricing-card 3.">
+        <div class="pricing-card pricing-card-3">
           <h2>Enterprise</h2>
           <div class="price">$99<span>/mo</span></div>
           <p class="pricing-desc">Built for scale, custom integrations, and large operations.</p>
-           
             <ul class="pricing-features">
                <li> 30 Templates</li>
                <li> 7 Landing Pages</li>
                <li> 12 Internal Pages</li>
                <li> Basic Assistance</li>
+            </div>
+
            </ul>
            <button class="pricing-btn">Contact Sales</button>
           <ul class="pricing-features">
@@ -139,6 +136,14 @@
         </ul>
            <button class="pricing-btn">Contact Sales</button>
   
+<!-- Main Container Grid -->
+ <div> class="pricing-container" style=display: flex; gap: 20px;justify-content: center; flex-wrap:">
+
+      <!-- Card 1 -->
+       <div class="pricing-card" style="border: 1px solid #ccc; padding: 20px; border-radius: 8px; width:250px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <p class="pricing-description">Perfect for trying things out.</p>
+ </div>
+
  </div>
 </pricing>
 </section>
@@ -195,18 +200,6 @@
      <body>
       <div>
 
-<script>
-  // Target the button using its class name
-  const ctaButton = document.querySelector('.cta-button');
-
-  // Add click event listener to show the alert 
-  if (ctaButton) {
-    ctaButton.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevents the page from reloading
-      alert('Message Sent! Thank you for staying updated.');
-    });
-  }
-</script>
 <footer>
   <div class="footer-horizontal-row">
 
