@@ -74,6 +74,7 @@ body {
 
 /* Styling for each individual box */
 .box {
+  display: inline-flexbox; 
   background-color: var(--card-background);
   border: 1px solid var(--card-border);
   border-radius: 8px;
@@ -81,16 +82,80 @@ body {
   width: 250px; /* Fixed width for consistency */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+
 }
 
 /* Optional: Resize boxes on smaller screens */
-@media (max-width: 768px) {
   .box {
+    display: block;
     width: 100%; /* Full width on smaller screens */
+  }
+
+.pricing-container {
+  display: flex;    /* Style 3 in a row horizontally */
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.pricing-container > .pricing-card {
+  flex: 0;
+  margin: 0;
+  width: auto;
+  /* Optional: ensure cards don't get too small on narrow screens */
+  min-width: 250px;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
+elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--accent-color);
+  text-align: center;
+}
 
+features-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.features-section p {
+  color: var(--subtext-color);
+  margin-bottom: 1.5rem;
+}
+
+div.features-section {
+  display: -webkit-box;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card.Enterprise > a {
+  display: inline-block;
+  width: 100%; /* or auto */
+}
 
 /* Target the parent container of the pricing cards */
 .pricing-section {
@@ -134,6 +199,16 @@ testimonials {
 } 
 
 call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
+Unstacked {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,7 +281,7 @@ footer {
   background-color: var(--secondary-color);
   color: #ffffff;
   padding: 1rem;
-  text-align: center;
+  text-align: flex-end;
 } 
 
 footer li {
