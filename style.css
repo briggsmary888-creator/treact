@@ -140,8 +140,8 @@ features-section h2 {
 }
 
 div.features-section {
-  display: -webkit-box;
-  flex-wrap: nowrap;
+  display: inside;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
@@ -218,22 +218,8 @@ Unstacked {
   text-align: center;
 }
 
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--background-color);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
-  border-radius: 6px;
-  border: 3px solid var(--background-color);
-}
-
 li {
-  list-style: none;
+  list-style: auto;
   margin-bottom: 1rem;
   color: var(--subtext-color);
 }
@@ -268,13 +254,9 @@ section {
   text-align: center;
 } 
 
-stretch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  background-color: var(--accent-color);
-  text-align: center;
+.Stetch {
+ aligin-self: stretch;
+ display: inline;
 }
 
 footer {
