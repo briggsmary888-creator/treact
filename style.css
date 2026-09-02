@@ -91,26 +91,6 @@ body {
     width: 100%; /* Full width on smaller screens */
   }
 
-.pricing-container {
-  display: flex;    /* Style 3 in a row horizontally */
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.pricing-container > .pricing-card {
-  flex: 0;
-  margin: 0;
-  width: auto;
-  /* Optional: ensure cards don't get too small on narrow screens */
-  min-width: 250px;
-}
-
 /* Responsive adjustment for mobile */
 @media (max-width: 768px) {
   .pricing-container {
@@ -129,22 +109,10 @@ elements {
   text-align: center;
 }
 
-features-section h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.features-section p {
-  color: var(--subtext-color);
-  margin-bottom: 1.5rem;
-}
-
-div.features-section {
-  display: inside;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
+.feature-item {
+  background-color: #f9f9f9;padding: 20px;    /* Optional background card color */
+  padding: 20px;
+  border-radius: 8px;
 }
 
 ul {
@@ -152,30 +120,41 @@ ul {
   margin: 0;
 }
 
-.pricing-card.Enterprise > a {
-  display: inline-block;
+.pricing-card-Personal > a {
+  display: Left;
   width: 100%; /* or auto */
 }
 
-/* Target the parent container of the pricing cards */
-.pricing-section {
-  display: flex; /* Center the cards horizontally */
-  justify-content: center; /* Align cards to the left */
-  align-items: center; /* Align cards to the right */
-  gap: 2rem; /* Space between cards */
-  padding: 2rem;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+.pricing-card-Business > a {
+  display: center;
+  width: 100%; /* or auto */
 }
 
-/* Style for individual pricing cards */
-.pricing-container {
-  background-color: var(--card-background);
-  border: 1px solid var(--card-border);
-  border-radius: 8px;
-  padding: 2rem;
-  width: 300px; /* Fixed width for consistency */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+.pricing-card-Enterprise > a {
+  display: right;
+  width: 100%; /* or auto */
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* create 3 equal columns */
+  gap: 30px;                             /* Space between the columns */
+  max-width: 1200px;                     /* Center the grid on wide screens */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.testimonial-section {
+  display: flex;
+  align-items: center;  /* Vertically centers the text next to the image */
+  gap: 20px;  /* Adds space between the image and the text */
+}
+
+/* Optional: Ensure the image doesn't shrink or grow unexpectedly */
+.testimonial-section img {
+  flex-shrink: 0;
+  width: 300px;  /* Set to your preferred image width */
+  height: auto;
 }
 
 banner {
