@@ -241,6 +241,50 @@ display: block;  /* Removes unwanted whitespace/gaps at the bottom of the image 
     min-width: 100%;
 }
 
+/* Container to align card horizontally */
+.pricing-container {
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px;               /* Adds space between each card */
+  flex-wrap: wrap;         /* Allows cards to drop to the next line on smaller screens */
+  padding: 40px 24px;      /* Adds breathing room around the pricing section */
+}
+
+/*Base Card Styling */
+.pricing-card {
+  background-color: #ffffff; /* Clean white background */
+  border: 1px solid #e2e8f0; /* Subtle border for separation */
+  border-radius: 8px;        /* Smooth rounded corners */
+  padding: 24px;
+  width: 280px;              /* Fixed width for uniformity */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Soft shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+/* Distinct Blue Business Card style */
+.pricing-card.Business {
+  border: 2px solid #3182ce; /* Blue border for emphasis */
+  box-shadow: 0 6px 12px rgba(49,130,206,0.1); /* Slightly stronger shadow */
+}
+
+/* Distinct white Enterprise Card style */
+.pricing-card.Enterprise {
+  border: 2px solid #e2e8f0; /* Subtle border for Enterprise */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Standard shadow */
+}
+
+/* Typography & layout Elements */
+.badge {
+  display: inline-block;
+  background-color: #3182ce; /* Blue badge for emphasis */
+  color: #ffffff;            /* White text for contrast */
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 16px;       /* Adds space below the badge */
+}
 .call-to-action {
     position: absolute;
     min-height: 100%;
@@ -252,6 +296,58 @@ display: block;  /* Removes unwanted whitespace/gaps at the bottom of the image 
     width: 1141px;
     user-select: none;
     color-scheme: light dark;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a202c; /* Dark text for readability */
+  margin-bottom: 8px;
+} 
+
+.period {
+  font-size: 16px;
+  color: #4a5568; /* Soft gray for the period text */
+}
+
+.description {
+  font-size: 14px;
+  color: #4a5568; /* Soft gray for the description */
+  margin-bottom: 16px;
+} 
+
+/* Features list styling */
+.features {
+  list-style-type: none; /* Removes default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+/* Button */
+.pricing-btn {  
+  background-color: #3182ce; /* Blue button for action */
+  color: #ffffff;            /* White text for contrast */
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Business Button (White background) */
+.business-btn {
+  background-color: #ffffff; /* White button for Business */
+  color: #3182ce;            /* Blue text for contrast */
+  border: 2px solid #3182ce; /* Blue border for emphasis */
+} 
+
+/* Enterprise Button (Gray background) */
+.enterprise-btn {
+  background-color: #e2e8f0; /* Light gray button for Enterprise */
+  color: #1a202c;            /* Dark text for contrast */
+  border: none;
 }
 
 .section-heading {
