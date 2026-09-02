@@ -1,3 +1,23 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: var(--background-color);
+}
+
 * {
   margin: 0 auto;
   padding: 0 auto;
@@ -22,5 +42,125 @@ body {
   line-height: 1.6;
 }
 
+/* Target the parent container of the pricing cards */
+.pricing-section {
+  display: flex; /* Center the cards horizontally */
+  justify-content: center; /* Align cards to the left */
+  align-items: center; /* Align cards to the right */
+  gap: 2rem; /* Space between cards */
+  padding: 2rem;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
 
+/* Style for individual pricing cards */
+.pricing-container {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 2rem;
+  width: 300px; /* Fixed width for consistency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
+testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--accent-color);
+  text-align: center;
+} 
+
+call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  border: 3px solid var(--background-color);
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+  color: var(--subtext-color);
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--subtext-color);
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+div {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 2rem;
+  background-color: var(--accent-color);
+  text-align: center;
+} 
+
+footer {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+} 
+
+footer li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 
