@@ -7,6 +7,27 @@ html, body {
   color: var(--text-color);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+image-feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
 nav {
   background-color: var(--primary-color);
   color: #ffffff;
@@ -142,6 +163,15 @@ section {
   background-color: var(--accent-color);
   text-align: center;
 } 
+
+stretch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--accent-color);
+  text-align: center;
+}
 
 footer {
   background-color: var(--secondary-color);
