@@ -188,80 +188,14 @@ banner {
   text-align: center;
 }
 
-testimonials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: var(--accent-color);
-  text-align: center;
-} 
-
-call-to-action {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: var(--accent-color);
-  text-align: center;
-}
-
-Unstacked {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: var(--accent-color);
-  text-align: center;
-}
-
-li {
-  list-style: auto;
-  margin-bottom: 1rem;
-  color: var(--subtext-color);
-}
-
-h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-p {
-  color: var(--subtext-color);
-  margin-bottom: 1.5rem;
-}
-
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-div {
-  margin-bottom: 1rem;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-section {
-  padding: 2rem;
-  background-color: var(--accent-color);
-  text-align: center;
-} 
-
 /* CSS Styling */
 .floated-image {
    /* This pushes the image to the left and forces text to the right */
-   float: left;
+   float: auto;
 
    /* Add margin so the text doesn't touch the image directly */
-   margin-right: 20px;
-   margin-bottom: 10px;
+   margin-right: 3px;
+   margin-bottom: 1px;
 
    /* Optional: Set a width so the image doesn't take up the whole screen */
    width: 300px;
