@@ -63,6 +63,35 @@ body {
   line-height: 1.6;
 }
 
+/* Container the holds all the boxes */
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Styling for each individual box */
+.box {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 2rem;
+  width: 250px; /* Fixed width for consistency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Optional: Resize boxes on smaller screens */
+@media (max-width: 768px) {
+  .box {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+
+
 /* Target the parent container of the pricing cards */
 .pricing-section {
   display: flex; /* Center the cards horizontally */
