@@ -1,3 +1,84 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing:border-box;
+}
+
+:root {
+  --primary-color: #3182ce; /* A professional clean blue */
+  --secondary-color: #2b6cb0; /* Slightly darker blue for hover states */
+  --accent-color: #ebf8ff; /* Light soft blue accent color */
+  --text-color: #1a202c; /* Deep dark text for readability */
+  --subtext-color: #4a5568; /* Soft gray for secondary text */
+  --background-color: #f7fafc; /* Professional soft grey background */
+  --card-background: #ffffff; /* Clean white background for cards */
+  --card-border: #e2e8f0; /* Subtle border for separation */
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Modern clean font */
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  background-color: var(--background-color);
+  padding: 16px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Button */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  background-color: var(--accent-color);
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.testimonial-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 24px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
 .nav-log {
   display: flex;
   /* Optional: center it if needed */
@@ -72,6 +153,27 @@
   margin: 0 auto 24px auto;   /* Centers the paragraph block */
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 40px;                             /* Adds space between the cards */
+  padding: 40px 24px;                    /* Adds breathing room around the cards */
+}
+
+.value-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 40px;                             /* Adds space between the cards */
+  padding: 40px 24px;                    /* Adds breathing room around the cards */
+}
+
+.img-section-container {
+  display: flex;
+  align-items: flex-start; /* Aligns text perfectly with the top of the image */
+  gap: 20px;               /* Pushes the text away from the image */
+  flex-wrap: nowrap;       /* Prevents the text from stacking below the image */
+}
+
 h2.features-main-heading {
   text-align: center;
 }
@@ -83,16 +185,6 @@ p.features-main-subtext {
 p {
   text-align: center;
 
-}
-
-.services-container {
-  display: center;
-  flex-wrap: wrap;         /* Allows elements to drop to the next line if crowded */ 
-  justify-content: center; /* Centers the service items on the row */
-  gap: 24px;               /* Spacing between each service box */
-  padding: 60px 24px;
-  max-width: 1200;
-  margin: 0 auto;
 }
 
 .service-card {
@@ -112,86 +204,12 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   margin-bottom: 16px;
 }
 
-.feature-card {
+.pricing-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.feature-card img {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 20px;
-}
-
-.feature {
-    color-scheme: light dark;
-    user-select: none;
-    height: 12290px;
-    width: 1141px;
-    left: 0;
-    margin: 0;
-    top: 0;
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-}
-
-/* Applied to each new wrapper group */
-.feature-item {
-  display: column;
-  flex-direction: center;
-  justify-content: space-between;
-  height: 100%;
-}
-
-
-/* Forces image and text block to sit horizontally side-by-side */
-.feature-cars {
-  display: flex;
-  flex-direction: column; /* Keeps elements horizontally side-by-side */
-  align-items: center; /* Verically center the text with the image */
-  gap: 15px; /* Adds space between the image and the text */
-}
-
-
-/* Optional sizing to keep your image consistent */
-.feature-img {
-  width: 80px; /* Adjust to your preferred image size */
-  height: auto;
-}
-
-/* Optional: Removes default margins for tight alignment */
-.feature-text h2 {
-  margin: 0 0 5px 0;
-}
-
-.feature-text p {
-  margin: 0;
-}
-
-/* Stacks elements vertically and centers them */
-.feature-card {
-  display: flex;
-  flex-direction: column; /* Stacks h2, image, and p verically */ 
-  align-items: center;    /* Centers the image and text blocks horizontally */
-  text-align: center;     /* Ensures the text inside h2 and pis centered */
-  gap: 15px;              /*Adds clean spacing between the elements */
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  place-items: center; /* This centers items both ways */
-}
-
-.step-section{
-  display: flex;
-}
-
-.value-section {
-  display: grid;
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px;               /* Adds space between each card */
+  flex-wrap: wrap;         /* Allows cards to drop to the next line on smaller screens */
+  padding: 40px 24px;      /* Adds breathing room around the pricing section */
 }
 
 .pricing-section {
@@ -201,183 +219,22 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 .testimonial-setion {
   display: contents;
 }
-.img-section-container {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    margin: 0;
-    top: 0;
-    height: 12290px;
-    width: 1141px;
-    user-select: none;
-    color-scheme: light dark;
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 40px;                             /* Adds space between the cards */
+  padding: 40px 24px;                    /* Adds breathing room around the cards */
 }
 
-img {
-  max-width: 100%; /* Preventes the image from being wider than its container */
-  height: auto;  /* Maintains the original aspect ratio so it doesn't stretch */
-display: block;  /* Removes unwanted whitespace/gaps at the bottom of the image */
-}
-
-/* Container holding your text and the image side-by-side */
-.img-section-container {
-  display: flex;
-  align-items: flex-start; /* Fix: Aligins text perfectly with the Top of the image */
-  gap: 20px;              /* Pushes the text away from the image */
-  flex-wrap: nowrap;      /* Fix: Prevents the text from stacking below the image */
-}
-
-.pricing-section {
-    color-scheme: light dark;
-    user-select: none;
-    height: 12290px;
-    width: 1141px;
-    left: 0;
-    margin: 0;
-    top: 0;
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-}
-
-/* Container to align card horizontally */
-.pricing-container {
-  display: flex;
-  justify-content: center; /* Centers the cards horizontally */
-  gap: 20px;               /* Adds space between each card */
-  flex-wrap: wrap;         /* Allows cards to drop to the next line on smaller screens */
-  padding: 40px 24px;      /* Adds breathing room around the pricing section */
-}
-
-/*Base Card Styling */
-.pricing-card {
-  background-color: #ffffff; /* Clean white background */
-  border: 1px solid #e2e8f0; /* Subtle border for separation */
-  border-radius: 8px;        /* Smooth rounded corners */
+.testimonial-card {
+  background-color: #ffffff;          /* Subtle border around customization elements */
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
   padding: 24px;
-  width: 280px;              /* Fixed width for uniformity */
+  width: 280px;                         /* Fixed width ensures they line up in clean rows */
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Soft shadow for depth */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
-}
-
-/* Distinct Blue Business Card style */
-.pricing-card.Business {
-  border: 2px solid #3182ce; /* Blue border for emphasis */
-  box-shadow: 0 6px 12px rgba(49,130,206,0.1); /* Slightly stronger shadow */
-}
-
-/* Distinct white Enterprise Card style */
-.pricing-card.Enterprise {
-  border: 2px solid #e2e8f0; /* Subtle border for Enterprise */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Standard shadow */
-}
-
-/* Typography & layout Elements */
-.badge {
-  display: inline-block;
-  background-color: #3182ce; /* Blue badge for emphasis */
-  color: #ffffff;            /* White text for contrast */
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 16px;       /* Adds space below the badge */
-}
-.call-to-action {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    margin: 0;
-    top: 0;
-    height: 12290px;
-    width: 1141px;
-    user-select: none;
-    color-scheme: light dark;
-}
-
-.price {
-  font-size: 32px;
-  font-weight: bold;
-  color: #1a202c; /* Dark text for readability */
-  margin-bottom: 8px;
-} 
-
-.period {
-  font-size: 16px;
-  color: #4a5568; /* Soft gray for the period text */
-}
-
-.description {
-  font-size: 14px;
-  color: #4a5568; /* Soft gray for the description */
-  margin-bottom: 16px;
-} 
-
-/* Features list styling */
-.features {
-  list-style-type: none; /* Removes default bullets */
-  padding: 0;
-  margin: 0;
-}
-
-/* Button */
-.pricing-btn {  
-  background-color: #3182ce; /* Blue button for action */
-  color: #ffffff;            /* White text for contrast */
-  border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-/* Business Button (White background) */
-.business-btn {
-  background-color: #ffffff; /* White button for Business */
-  color: #3182ce;            /* Blue text for contrast */
-  border: 2px solid #3182ce; /* Blue border for emphasis */
-} 
-
-/* Enterprise Button (Gray background) */
-.enterprise-btn {
-  background-color: #e2e8f0; /* Light gray button for Enterprise */
-  color: #1a202c;            /* Dark text for contrast */
-  border: none;
-}
-
-.section-heading {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-ul.pricing-features {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  list-style-type: none;
-  padding: 0px;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin: 0px;
-}
-
-.content-wrapper {
-  flex-grow: 1;
-}
-
-.section-heading {
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: auto;
-  justify-content: flex-start;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 @media (max-width: 768px) {
@@ -385,14 +242,6 @@ ul.pricing-features {
     flex-direction: column;  /* Stacks logo on top, menu below */
     gap: 16px;               /* Adds breathing room between logo and links */
     padding: 16px;
-}
-
-.nav-links {
-  flex-direction: column;  /* Stacks links vertically */
-  gap: 12px;               /* Tighter spacing for thumb-tapping */
-  width: 100%;
-  text-align: center;
-  }
 }
 
 /* Resposive layout for screen smaller the 768px */
@@ -406,101 +255,11 @@ ul.pricing-features {
   }
 }
 
-.feature-card {
-  /* 1. Add spacing and box appearance */
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 24px;
-  text-align: center;
-
-  /* 2. Add a soft drop shadow and smooth transition */
-  box-shadow: o, 4px 6px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease; box-shadow: 0.2s ease;
-}
-
-/* Subscribe Form Section Styles */
-.subscribe-section {
-  background-color: #ebf8ff; /* Light soft blue accent color */
-  padding: 60px 24px;
-  text-align: center;
-}
-
-.suscribe-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.subscribe-container h2 {
-  font-size: 28px;
-  color: #2b6cb0;
-  margin-bottom: 12px;
-}
-
-.subscribe-container p {
-  color: #4a5568;
-  margin-bottom: 24px;
-}
-
-.subscribe-form {
-  display: flex;
-  gap: 12px;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.subscribe-form input {
-  flex: 1;
-  padding: 12px 16px;
-  border: 1px solid #cbd5e0;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-.subscribe-form button {
-  background-color:  #2b6cb0;
-  color: #ffffff;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.subscribe-form button:hover {
-  background: #2c5282;
-}
-
 /* Mobile adjustments */
 @media (max-width: 480px) {
   .subscribe-form {
     flex-direction: column;
   }
-}
-
-/* Style for the button link */
-.cta-button {
-  display: inline-block; /* Allows padding and dimensions to apply properly */
-  background-color: #3182ce; /* Professional clean blue */
-  color: #ffffff; /* White text color */
-  text-decoration: none; /* Removes the default link underline */
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 6px; /* Smooth rounded corners */
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-/* Hover state animation */
-.cta-button:hover {
-  background-color: #2b6cb0; /* Darkens slightly when cursor rolls over */
-}
-
-/* Click state effect */
-.cta-button:active {
-  transform: scale(0.98); /* Subtle button press compression effect */
 }
 
 /* 
@@ -566,101 +325,6 @@ footer {
 li {
   display: block;
   margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 0px;
-}
-
-li {
-  display: block;
-  margin: 1px;
-}
-
-li {
-  display: block;
-  margin: 1px;
-}
-
-li {
-  display: block;
-  margin: 1px;
-}
-
-li {
-  display: block;
-  margin: 1px;
-}
-
-li {
-  display: block;
-  margin: 1px;
-}
-
-li {
-  display: block;
-  margin: 1px;
 }
 
 .footer-grid a:hover {
