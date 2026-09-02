@@ -254,9 +254,24 @@ section {
   text-align: center;
 } 
 
-.Stetch {
- aligin-self: stretch;
- display: inline;
+/* CSS Styling */
+.floated-image {
+   /* This pushes the image to the left and forces text to the right */
+   float: left;
+
+   /* Add margin so the text doesn't touch the image directly */
+   margin-right: 20px;
+   margin-bottom: 10px;
+
+   /* Optional: Set a width so the image doesn't take up the whole screen */
+   width: 300px;
+}
+
+/* Clearfix: Prevents the layout from breaking below the image container */
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 footer {
