@@ -157,6 +157,18 @@ ul {
   height: auto;
 }
 
+.Testimonials {
+  display: flex;
+  align-items: stretch; /* Forces children to match height */
+  gap: 20px;
+}
+
+.Testimonials img {
+  width: 300px;
+  flex: 0 0 300px;
+  object-fit: cover; /* Prevents distortion while matching height */
+}
+
 banner {
   display: flex;
   flex-direction: column;
