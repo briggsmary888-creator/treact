@@ -209,12 +209,11 @@ h2 {
 }
 
 .pricing-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal columns */
+  align-items: end;                       /* Aligns card content to the bottom */
   gap: 20px;
 }
-
 
 .testimonial-section {
   display: flex;
