@@ -139,9 +139,8 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* create 3 equal columns */
   gap: 30px;                             /* Space between the columns */
-  max-width: 1200px;                     /* Center the grid on wide screens */
-  margin: 0 auto;
-  padding: 20px;
+  align-items: end;                      /*  This pushes shorter cards (like Personal) down to match the bottom of the Business card */
+  
 }
 
 .pricing-card-Personal h2 {
