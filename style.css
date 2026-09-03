@@ -144,6 +144,26 @@ ul {
   padding: 20px;
 }
 
+.pricing-card-Personal div {
+  display: flex;
+  justify-self: flex-start; /* align content to the left */
+  width: 24px;
+}
+
+.pricing-card-Business div {
+  display: flex;
+  justify-content: center;  /* Centers the content */
+  width: 24px;
+}
+
+.pricing-card-Enterprise div {
+  display: flex;
+  justify-content: flex-end;   /* Aligns content to the right */
+  width: 24px;
+}
+
+
+
 .testimonial-section {
   display: flex;
   align-items: center;  /* Vertically centers the text next to the image */
