@@ -208,11 +208,9 @@ h2 {
   color: #333333;
 }
 
-.pricing-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal columns */
-  align-items: end;                       /* Aligns card content to the bottom */
-  gap: 20px;
+card {
+  display: inline-block;
+  vertical-align: bottom;  /* forces the blocks to line up at the base */
 }
 
 .testimonial-section {
