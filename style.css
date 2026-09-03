@@ -148,15 +148,74 @@ ul {
   text-align: left; /* or left / rightdepending on your goals */
 }
 
+.pricing-card-Personal div {
+  text-align: left;
+}
+
+.pricing-card-Personal p {
+  text-align: left;
+}
+
+.pricing-card-Personal ul {
+  text-align: left;
+}
+
+.pricing-card-Personal li {
+  text-align: left;
+}
+
 .pricing-card-Business h2 {
   text-align: center;
-  
+}
+.pricing-card-Business div {
+  text-align: center;
+}
+
+.pricing-card-Business p {
+  text-align: center;
+}
+
+.pricing-card-Business ul {
+  text-align: center;
+}
+
+.pricing-card-Business li {
+  text-align: center;
 }
 
 .pricing-card-Enterprise h2 {
   text-align: right;
 }
 
+.pricing-card-Enterprise div {
+  text-align: right;
+}
+
+.pricing-card-Enterprise p {
+  text-align: right;
+}
+
+.pricing-card-Enterprise ul {
+  text-align: right;
+}
+
+.pricing-card-Enterprise li {
+  text-align: right;
+}
+
+h2 {
+  text-align: :center;
+  color: #333333;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh;
+  width: 100%;
+}
 
 
 .testimonial-section {
