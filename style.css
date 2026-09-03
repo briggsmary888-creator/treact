@@ -144,22 +144,17 @@ ul {
   padding: 20px;
 }
 
-.pricing-card-Personal div {
-  display: flex;
-  justify-self: flex-start; /* align content to the left */
-  width: 24px;
+.pricing-card-Personal h2 {
+  text-align: left; /* or left / rightdepending on your goals */
 }
 
-.pricing-card-Business div {
-  display: flex;
-  justify-content: center;  /* Centers the content */
-  width: 24px;
+.pricing-card-Business h2 {
+  text-align: center;
+  
 }
 
-.pricing-card-Enterprise div {
-  display: flex;
-  justify-content: flex-end;   /* Aligns content to the right */
-  width: 24px;
+.pricing-card-Enterprise h2 {
+  text-align: right;
 }
 
 
