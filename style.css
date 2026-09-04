@@ -248,6 +248,32 @@ div,h2,p,ul,li {
   margin-bottom: 10px;
 }
 
+/* Give the paragraph block room to spread out horizontally */
+.testimonial-content-block {
+  flex: 2;
+  min-width: 300px;
+}
+
+.textimoial-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin-bottom: 15px;
+}
+
+.testimonial-auther {
+  font-weight: 600;
+color: #1f2937;
+}
+
+/* Responsive breakpoint for mobile screens */
+@media (max-width: 768px){
+  .textimonial-section {
+    flex-direction: column;
+    gap: 20pc;
+  }
+}
+
 banner {
   display: flex;
   flex-direction: column;
