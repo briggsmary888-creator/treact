@@ -85,16 +85,6 @@ body {
   }
 }
 
-elements {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: var(--accent-color);
-  text-align: center;
-}
-
 .hero-container {
   display: flex;
   flex-direction: row-reverse;
@@ -133,46 +123,32 @@ ul {
   margin: 0;
 }
 
-.pricing-card-Personal > a {
-  display: Left;
-  width: 100%; /* or auto */
-}
-
-.pricing-card-Business > a {
-  display: center;
-  width: 100%; /* or auto */
-}
-
-.pricing-card-Enterprise > a {
-  display: right;
-  width: 100%; /* or auto */
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* create 3 equal columns */
-  gap: 30px;                             /* Space between the columns */
-  align-items: end;                      /*  This pushes shorter cards (like Personal) down to match the bottom of the Business card */
+.pricing-card-Personal,
+.pricing-card-Business,
+.pricing-card-Enterprise {
+  display: block; /* Changes from the invalid 'neo-grid' to a standard block layout */
+  width: 100%; 
+  box-sizing: border-box; /* Ensures padding doesn't push the cards past 100% width */
 }
 
 .pricing-card-Personal h2 {
-  text-align: left; /* or left / rightdepending on your goals */
+  text-align: center; /* or left / rightdepending on your goals */
 }
 
 .pricing-card-Personal div {
-  text-align: left;
+  text-align: center;
 }
 
 .pricing-card-Personal p {
-  text-align: left;
+  text-align: center;
 }
 
 .pricing-card-Personal ul {
-  text-align: left;
+  text-align: center;
 }
 
 .pricing-card-Personal li {
-  text-align: left;
+  text-align: center;
 }
 
 .pricing-card-Business h2 {
@@ -195,33 +171,30 @@ ul {
 }
 
 .pricing-card-Enterprise h2 {
-  text-align: right;
+  text-align: center;
 }
 
 .pricing-card-Enterprise div {
-  text-align: right;
+  text-align: center;
 }
 
 .pricing-card-Enterprise p {
-  text-align: right;
+  text-align: center;
 }
 
 .pricing-card-Enterprise ul {
-  text-align: right;
+  text-align: center;
 }
 
 .pricing-card-Enterprise li {
-  text-align: right;
+  text-align: center;
 }
 
-h2 {
-  text-align: center;
-  color: #333333;
-}
-
-/* Center the text elements */
-div,h2,p,ul,li {
-  text-align: center;
+.pricing-flex {
+  display: flex;
+  grid-template-rows: repeat(3, 1fr); /* create 3 equal columns */
+  gap: 30px;                             /* Space between the columns */
+  align-items: row;                      /*  This pushes shorter cards (like Personal) down to match the bottom of the Business card */
 }
 
 .testimonial-section {
