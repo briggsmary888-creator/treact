@@ -235,6 +235,19 @@ div,h2,p,ul,li {
   margin: 0 auto;
 }
 
+/* Ensure the heading section takes up resonable width */
+.tesimonial-heading-block {
+  flex: 1;
+  min-width: 250px;
+}
+.testimonial-heading-block .subheading {
+  display: block;
+  text-transform: uppercase;
+  color: #6366f1;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 banner {
   display: flex;
   flex-direction: column;
