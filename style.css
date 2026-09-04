@@ -190,16 +190,16 @@ ul {
   text-align: center;
 }
 
-.pricing-flex {
+.pricing-grid {
   display: flex;
-  grid-template-rows: repeat(3, 1fr); /* create 3 equal columns */
-  gap: 30px;                             /* Space between the columns */
-  align-items: row;                      /*  This pushes shorter cards (like Personal) down to match the bottom of the Business card */
+  justify-content: space-between;
+  gap: 30px; 
+  align-items: stretch;                   
 }
 
 .testimonial-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
