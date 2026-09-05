@@ -223,18 +223,22 @@ section:last-of-type {
 
 .testimonial-section {
   display: flex;
-  flex-direction: row;            /* Aligns items side-by-side */
+  flex-direction: column-reverse;            /* Aligns items side-by-side */
   justify-content: space-between;  /* pushes text left and image right */
-  align-items: center;             /* Vertically centers both items */
+  align-items: flex-start;             /* Vertically centers both items */
   gap: 40px;                       /* Keeps space between text and image */
-}
+  
+  /* Add your image here */
+  background-image: url(images/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg);
+  background-size: cover;
+  background-position: center;
 
 /* Optional: Ensure the text and image take up appropriate widths */
-.text-content {
+text-content {
   flex: 1;
 }
 
-.section-image {
+section-image {
   max-width: 40%; /* Adjust as needed */
   height: auto;
 }
@@ -259,7 +263,7 @@ banner {
 }
 
 /* CSS Styling */
-.floated-image {
+floated-image {
    /* This pushes the image to the left and forces text to the right */
    float: auto;
 
@@ -272,30 +276,15 @@ banner {
 }
 
 /* Clearfix: Prevents the layout from breaking below the image container */
-.container::after {
+container::after {
   content: "";
   display: table;
   clear: both;
 }
 
-footer {
+footer-section {
   background-color: var(--secondary-color);
   color: #ffffff;
   padding: 1rem;
   text-align: flex-end;
 } 
-
-footer li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-footer a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
