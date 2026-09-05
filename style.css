@@ -112,6 +112,44 @@ body {
     }
   }
 
+  /* Style the entire section background and spacing */
+.feature-section {
+padding: 60px 20px;
+background-color: #f9f9f9;
+}  
+
+/* Turn the container into a grid layout */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style each individual box */
+.feature-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Style image inside the boxes */
+.feature-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+
 .feature-item {
   background-color: #f9f9f9;padding: 20px;    /* Optional background card color */
   padding: 20px;
