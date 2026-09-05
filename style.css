@@ -1,81 +1,24 @@
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-image-feature {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  background-color: var(--accent-color);
-  text-align: center;
-}
-
-nav {
+.nav {
   background-color: var(--primary-color);
   color: #ffffff;
   padding: 1rem;
   text-align: center;
 }
 
-* {
-  margin: 0 auto;
-  padding: 0 auto;
-  box-sizing:border-box;
-}
-
-:root {
-  --primary-color: #3182ce; /* A professional clean blue */
-  --secondary-color: #2b6cb0; /* Slightly darker blue for hover states */
-  --accent-color: #ebf8ff; /* Light soft blue accent color */
-  --text-color: #1a202c; /* Deep dark text for readability */
-  --subtext-color: #4a5568; /* Soft gray for secondary text */
-  --background-color: #f7fafc; /* Professional soft grey background */
-  --card-background: #ffffff; /* Clean white background for cards */
-  --card-border: #e2e8f0; /* Subtle border for separation */
-}
-
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-/* Container the holds all the boxes */
-.steps {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-/* Styling for each individual box */
-.box {
-  display: flex;
-  flex-direction: column; 
-  background-color: var(--card-background);
-  border-radius: 8px;
-  padding: 2rem;
-  width: 250px; /* Fixed width for consistency */
-}
-
-/* Optional: Resize boxes on smaller screens */
-  .box {
-    display: block;
-    width: 100%; /* Full width on smaller screens */
+@media (max-width: 768px){
+.features-container {
+    flex-direction: column;
   }
+}
 
 /* Responsive adjustment for mobile */
 @media (max-width: 768px) {
@@ -105,7 +48,8 @@ section:last-of-type {
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   }
 
   .image-cloumn, .text-column {
@@ -124,14 +68,49 @@ section:last-of-type {
     }
   }
 
-  /* Style the entire section background and spacing */
+/* Center and space the header text */
+.feature-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Arrange the 3 items in a single row */
 .feature-section {
-padding: 60px 20px;
-background-color: #f9f9f9;
-}  
+  display: flexbox;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.features-container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Style each individual service column */
+.feature-item {
+  text-align: justify;
+}
+
+.feature-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.feature-item .icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
 
 /* Turn the container into a grid layout */
-.feature-grid {
+.feature-section {
   display: grid;
   grid-template-columns: repeat(3 1fr);
   gap: 30px;
@@ -150,27 +129,22 @@ background-color: #f9f9f9;
 
 /* Style image inside the boxes */
 .feature-box img {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   margin-bottom: 15px;
 }
 
-.feature-grid {
+
+/* Container the holds all the boxes */
+.steps-container {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   gap: 20px;
 }
 
-.feature-item {
-  background-color: #f9f9f9;padding: 20px;    /* Optional background card color */
-  padding: 20px;
-  border-radius: 8px;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
+.step-card {
+  flex: 1;
 }
 
 .pricing-card-Personal,
@@ -182,7 +156,7 @@ ul {
 }
 
 .pricing-card-Personal h2 {
-  text-align: center; /* or left / rightdepending on your goals */
+  text-align: center; 
 }
 
 .pricing-card-Personal div {
@@ -261,7 +235,7 @@ ul {
 }
 
 .section-image {
-  max-width: 50%; /* Adjust as needed */
+  max-width: 40%; /* Adjust as needed */
   height: auto;
 }
 
