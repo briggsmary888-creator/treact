@@ -222,35 +222,68 @@ banner {
 }
 
 .testimonial-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial-container {
+  min-width: 800px;
+  margin: 0 auto;
+
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.testimonial-card {
   display: flex;
-  flex-direction: column-reverse;            /* Aligns items side-by-side */
-  justify-content: space-between;  /* pushes text left and image right */
-  align-items: flex-start;             /* Vertically centers both items */
-  gap: 40px;                       /* Keeps space between text and image */
-  
-  /* Add your image here */
-  background-image: url(images/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg);
-  background-size: cover;
-  background-position: center;
-}
-
-/* Optional: Ensure the text and image take up appropriate widths */
-text-content {
-  flex: 1;
-}
-
-.section-image {
-  max-width: 40%; /* Adjust as needed */
-  height: auto;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: left;
 }
 
 
 /* Responsive breakpoint for mobile screens */
 @media (max-width: 768px){
-  .textimonial-section {
+  .textimonial-card {
     flex-direction: column;
     gap: 20pc;
   }
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 40%;
+  object-fit: cover;
+}
+
+testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.testimonial-role {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--accent-color, #777);
 }
 
 .banner {
@@ -283,9 +316,43 @@ container::after {
   clear: both;
 }
 
+/* Centers the conent inside the footer */
 .footer-section {
-  background-color: var(--secondary-color);
-  color: #ffffff;
-  padding: 1rem;
-  text-align: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.legal-subtext {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.legal-subtextt:hover {
+  text-decoration: underline;
+}
+
+.footer-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
 }
