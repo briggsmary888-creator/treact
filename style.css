@@ -193,7 +193,7 @@ banner {
   background-color: #f7fafc;
   font-size: 1.5rem;
   padding: 0.75rem;
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,15 +381,16 @@ testimonial-text {
 /* Container adjustment */
 .value-section {
   display: grid;
-  align-items: center;
+  align-items: right;
   gap: 20px;
+  margin: 0;
 }
 
 /* Image placement */
 .value-section img {
   display: left;
-  width: 40%;
-  height: auto;
+  width: 100%;
+  height: 0 auto;
 }
 
 /* Paragraph wrapper placement */
@@ -417,13 +418,6 @@ testimonial-text {
 
    /* Optional: Set a width so the image doesn't take up the whole screen */
    width: 300px;
-}
-
-/* Clearfix: Prevents the layout from breaking below the image container */
-container::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Centers the conent inside the footer */
