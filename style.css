@@ -377,36 +377,7 @@ testimonial-text {
   font-size: 0.9rem;
   color: var(--accent-color, #777);
 }
-
-/* Grid adjustment for .value-section */
-.value-section img {
-  grid-column: 2;
-}
-
-.value-section p {
-  grid-column: 1;
-}
-
-/* Update the parent container for a balanced two-column split */
-.value-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 20px;
-}
-
-/* Ensure the image is pinned to the right column */
-.value-section img {
-  grid-column: 2;
-  width: 100%;
-  height: auto;
-}
-
-/* Ensure the text container is pinned to the left column */
-.text-content-wrapper {
-  grid-column: 1;
-}
-
+  
 /* Container adjustment */
 .value-section {
   display: grid;
