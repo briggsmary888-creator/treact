@@ -399,7 +399,7 @@ testimonial-text {
 /* CSS Styling */
 .floated-image {
    /* This pushes the image to the left and forces text to the right */
-   float: auto;
+   float: center;
 
    /* Add margin so the text doesn't touch the image directly */
    margin-right: 3px;
