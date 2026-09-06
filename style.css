@@ -407,6 +407,26 @@ testimonial-text {
   grid-column: 1;
 }
 
+/* Container adjustment */
+.value-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image placement */
+.value-section img {
+  grid-column: 2;
+  width: 100%;
+  height: auto;
+}
+
+/* Paragraph wrapper placement */
+.text-content-wrapper {
+  grid-column: 1;
+}
+
 .banner {
   display: flexbox;
   align-items: center;
