@@ -68,75 +68,46 @@ banner {
     }
   }
 
+
+
 /* Center and space the header text */
 .feature-header {
-  text-align: center;
+  align-items: center;
   margin-bottom: 40px;
 }
 
-/* Arrange the 3 items in a single row */
-.feature-section {
-  display: flexbox;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.features-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.feature-container > div {
-  flex: 1 1 calu(33.333% - 20px);
-  min-width: 250px;
-}
-
-/* Style each individual service column */
-.feature-card {
-  text-align: justify;
-}
-
-.feature-card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-}
-
-.feature-card .icon {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-/* Turn the container into a grid layout */
-.feature-section {
+/* The box container holding all 6 cards */
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(3 1fr);
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr); /* Creates exactly 3 columns of equal width */
+  gap: 20px;                             /* Adds space between the cards */
+  padding: 20px;
+  max-width: 1200px;                     /* Centers the grid nicely on the screen */
   margin: 0 auto;
 }
 
-/* Style each individual box */
-.feature-card {
-  background: #ffffff;
-  padding: 25px;
+/* Optional styles to make the individual cards look clean */
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.01);
 }
 
-/* Style image inside the boxes */
-.feature-card img {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 15px;
+.your-parent-container-class {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .row-section {
@@ -239,6 +210,23 @@ banner {
   margin: 0;
   color: #718096;
   line-height: 1.5;
+}
+
+* Target the container to ensure the grid structure is defined */
+.value-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Example relative sizing */
+}
+
+/* Move the image to the right column */
+.value-section img {
+  grid-column: 2;
+  grid-row: 1 / span 10; /* Maintain vertical span if necessary */
+}
+
+/* Move the text content to the left column */
+.value-section p {
+  grid-column: 1;
 }
 
 @media (max-eidth: 900px) {
@@ -390,14 +378,22 @@ testimonial-text {
   color: var(--accent-color, #777);
 }
 
+/* Grid adjustment for .value-section */
+.value-section img {
+  grid-column: 2;
+}
+
+.value-section p {
+  grid-column: 1;
+}
+
 .banner {
-  display: flex;
-  flex-direction: column;
+  display: flexbox;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   background-color: var(--accent-color);
   text-align: center;
+  margin: 0 auto;
 }
 
 /* CSS Styling */
