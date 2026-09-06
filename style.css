@@ -135,16 +135,103 @@ banner {
 }
 
 
-/* Container the holds all the boxes */
-.steps-container {
+.row-container {
   display: flex;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 20px;
+  gap: 30px;
+  align-items: center;
 }
 
-.step-card {
+.row-container {
+  flex-direction: row-reverse;
+}
+
+.value-section {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+}
+
+.value-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.value-text-content {
   flex: 1;
+  text-align: left;
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  color: var(--accent-color, #6574cd);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.value-heading {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.value-description {
+  color: #718096;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.value-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.value-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.value-icon-box {
+  background-color: #f7fafc;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.value-info h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: #2d3748;
+}
+
+.value-info p {
+  margin: 0;
+  color: #718096;
+  line-height: 1.5;
+}
+
+@media (max-eidth: 900px) {
+  .value-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .value-text-content {
+    text-align: center;
+  }
 }
 
 .pricing-card-Personal,
