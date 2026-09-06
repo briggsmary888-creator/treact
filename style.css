@@ -1,4 +1,4 @@
-html, body {
+.html, body {
   height: 100%;
   margin: 0;
   padding: 0 auto;
@@ -36,7 +36,7 @@ banner {
 }
 
 /* Optional: Remove margin from the very last section */
-section:last-of-type {
+.section:last-of-type {
   margin: 0;
 }
 
@@ -52,7 +52,7 @@ section:last-of-type {
   padding-bottom: 20px;
   }
 
-  .image-cloumn, .text-column {
+.image-cloumn, .text-column {
     flex: 2;
   }
 
@@ -232,13 +232,14 @@ section:last-of-type {
   background-image: url(images/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg);
   background-size: cover;
   background-position: center;
+}
 
 /* Optional: Ensure the text and image take up appropriate widths */
 text-content {
   flex: 1;
 }
 
-section-image {
+.section-image {
   max-width: 40%; /* Adjust as needed */
   height: auto;
 }
@@ -252,7 +253,7 @@ section-image {
   }
 }
 
-banner {
+.banner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,7 +264,7 @@ banner {
 }
 
 /* CSS Styling */
-floated-image {
+.floated-image {
    /* This pushes the image to the left and forces text to the right */
    float: auto;
 
@@ -282,9 +283,9 @@ container::after {
   clear: both;
 }
 
-footer-section {
+.footer-section {
   background-color: var(--secondary-color);
   color: #ffffff;
   padding: 1rem;
   text-align: flex-end;
-} 
+}
