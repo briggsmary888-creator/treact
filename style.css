@@ -83,16 +83,21 @@ banner {
 
 .features-container {
   display: flex;
-  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
   gap: 20px;
 }
 
+.feature-container > div {
+  flex: 1 1 calu(33.333% - 20px);
+  min-width: 250px;
+}
+
 /* Style each individual service column */
-.feature-item {
+.feature-card {
   text-align: justify;
 }
 
-.feature-item {
+.feature-card {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -104,7 +109,7 @@ banner {
   border-radius: 8px;
 }
 
-.feature-item .icon {
+.feature-card .icon {
   font-size: 2rem;
   margin-bottom: 15px;
 }
@@ -119,7 +124,7 @@ banner {
 }
 
 /* Style each individual box */
-.feature-box {
+.feature-card {
   background: #ffffff;
   padding: 25px;
   border-radius: 8px;
@@ -128,23 +133,35 @@ banner {
 }
 
 /* Style image inside the boxes */
-.feature-box img {
+.feature-card img {
   width: 25px;
   height: 25px;
   margin-bottom: 15px;
 }
 
-
-.row-container {
-  display: flex;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-  gap: 30px;
-  align-items: center;
+.row-section {
+  overflow: hidden; /* Clearfix */
 }
 
-.row-container {
-  flex-direction: row-reverse;
+.row-section img {
+  float: left;
+  margin-right: 20px;
+  width: 40%;
+}
+
+.row-text {
+  overflow: hidden; /* Prevents text from wrapping under the image */
+}
+
+.value-section {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 2rem;
+}
+
+.value-section img {
+  grid-row: 1 / span 10; /* Spans multiple rows if there are many paragraphs */
+  width: 100%;
 }
 
 .value-section {
