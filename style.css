@@ -31,6 +31,17 @@
   background-color: #ffffff;
 }
 
+.nav-section img {
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-icon {
+  display: flex;
+  gap: 15px;
+}
+
 .features-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
