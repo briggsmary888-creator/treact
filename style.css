@@ -58,139 +58,24 @@ body {
     }
 }
 
-.features-card-1,
-.features-card-2,
-.features-card-3,
-.features-card-4,
-.features-card-5,
-.features-card-6 {
-  display: flex;
-  flex-direction: column;  
-  width: 100%;
-  box-sizing: border-box; 
-}
-
-/* Target container with in .feature-box */
-.feature-box > div:nth-child(4) {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-/* Stackes icon, h2, and p verticaly inside each card */
-div.features-section > div {
-  display: flex;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center !important;
-}
-
-/* This sets up the horizontal row of three */
-div.features-section {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 20px;
-  width: 100%;
-}
-
-/* This targets the actual card containers and stacks their content verically */
-div.features-section > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Container adjustment to enable horizontal alignment */
-.row-section {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-/* Resize image to 40% of parent width */
-.row-section img {
-  width: 40%;
-  height: auto;
-  display: block; /* Recommended to prevent baseline spacing issues */
-}
-
-/* Ensure text container fills the remaining 60% of the space */
-.row-text {
-  flex: 1;
+.features-container {
+  .features-card-1,
+  .features-card-2,
+  .features-card-3,
+  .features-card-4,
+  .features-card-5,
+  .features-card-6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
   }
-
-.image-cloumn, .text-column {
-    flex: 2;
-  }
-
-  .image-column img {
-    width: 50%; 
-    height: auto;
-  }
-
-  /* Responsive design for moblie screens */
-  @media (max-width: 768px) {
-    .hero-container {
-      flex-direction: column;  /* Stacks them verically on small screen */
-    }
-  }
-
-
-
-/* Center and space the header text */
-.feature-header {
-  align-items: center;
-  margin-bottom: 40px;
 }
-
-/* The box container holding all 6 cards */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates exactly 3 columns of equal width */
-  gap: 20px;                             /* Adds space between the cards */
-  padding: 20px;
-  max-width: 1200px;                     /* Centers the grid nicely on the screen */
-  margin: 0 auto;
-}
-
-/* Optional styles to make the individual cards look clean */
-.card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.01);
-}
-
 .your-parent-container-class {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-}
-
-.card-container {
-  display: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.row-section {
-  overflow: hidden; /* Clearfix */
-}
-
-.row-section img {
-  float: left;
-  margin-right: 0 auto;
-  width: 40%;
-}
-
-.row-text {
-  overflow: hidden; /* Prevents text from wrapping under the image */
 }
 
 .value-section {
