@@ -1,13 +1,13 @@
 body {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .html, body {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: var(--background-color);
@@ -29,7 +29,7 @@ body {
 
 /* Optional: Remove margin from the very last section */
 .section:last-of-type {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -188,7 +188,7 @@ div.features-section > div {
 
 .row-section img {
   float: left;
-  margin-right: 20px;
+  margin-right: 0 auto;
   width: 40%;
 }
 
@@ -232,7 +232,7 @@ div.features-section > div {
   letter-spacing: 0.1rem;
   color: var(--accent-color, #6574cd);
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0 auto;
 }
 
 .value-heading {
@@ -274,13 +274,13 @@ div.features-section > div {
 }
 
 .value-info h2 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 auto;
   font-size: 1.25rem;
   color: #2d3748;
 }
 
 .value-info p {
-  margin: 0;
+  margin: 0 auto;
   color: #718096;
   line-height: 1.5;
 }
@@ -316,12 +316,10 @@ div.features-section > div {
 .pricing-card-Enterprise {
   display: block; /* Changes from the invalid 'neo-grid' to a standard block layout */
   width: 100%;
-  width: 100%; 
   box-sizing: border-box; /* Ensures padding doesn't push the cards past 100% width */
 }
 
 .pricing-card-Personal h2 {
-  text-align: center;
   text-align: center; 
 }
 
@@ -438,13 +436,13 @@ div.features-section > div {
   justify-content: center;
   background-color: var(--accent-color);
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Center the main section container */
 .call-to-action-section {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   width: fit-content;
 }
 
@@ -455,6 +453,7 @@ banner {
   align-items: center;
   text-align: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 /* Center heading text */
@@ -487,14 +486,13 @@ li {
   justify-content: center;
   background-color: var(--accent-color);
   text-align: center;
-  margin: 0 auto;
 }
 
 /* CSS Styling */
 .floated-image {
    /* This pushes the image to the left and forces text to the right */
    float: center;/* Add margin so the text doesn't touch the image directly */
-   margin-right: 3px;
+   margin-right: 0 auto;
    margin-bottom: 1px;/* Optional: Set a width so the image doesn't take up the whole screen */
    width: 300px;
 }
@@ -519,7 +517,7 @@ li {
 .footer-content ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   gap: 20px;
 }
@@ -531,7 +529,7 @@ li {
 }
 
 .footer-item p {
-  margin: 0;
+  margin: 0 auto;
   font-size: 14px;
   color: #777;
 }
