@@ -294,3 +294,31 @@ body {
   font-size: 14px;
   opacity: 0.8;
 }
+
+.legal-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.legal-subtext {
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.legal-subtext:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+border-top: 1px solid #4a5568;
+padding-top: 20px;
+font-size: 13px;
+color: #cbd5e0;
+}
