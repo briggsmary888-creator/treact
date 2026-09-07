@@ -398,43 +398,32 @@ div.features-section > div {
   gap: 30px;
   align-items: stretch;
 }
-/* Parent Container */
-.testimonials-section.ai-style-change-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-}
 
-/* Child Columns (Image and Text Containers) */
-.testimonials-section.ai-style-change-1 > div {
-  flex: 1 1 0;
-  min-width: 0;
-}
-
-/* Responsive Image Handling */
-.testimonials-section.ai-style-change-1 .image-content img {
-  width: 40%;
-  height: auto;
-  display: block;
-}
 /* Parent Container */
 .testimonials-section {
-  display: left;
-  align-items: center;
-  gap: 20px;
-}
-
-/* Text Content Container */
-.testimonials-section > div:not(.image-content) {
-  width: auto;
-  flex-grow: 1;
-}
-
-div {
   display: flex;
-  flex-direction: column; /* To maintain vertical stacking if needed */
+  flex-direction: row;
   align-items: center;
+  gap: 2rem;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  width: auto;
+}
+
+/* Image Positioning */
+.image-section > img {
+  width: 50%;
+  height: auto;
+  align-self: flex-start;
+}
+
+/* Text Section */
+.text-section {
+  flex: 2;
+  width: auto;
 }
 
 /* Image placement */
@@ -442,15 +431,6 @@ div {
   width: 50%;
   height: auto;
   display: left;
-}
-
-.banner {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  background-color: var(--accent-color);
-  text-align: center;
-  margin: 0 auto;
 }
 
 /* Center the main section container */
