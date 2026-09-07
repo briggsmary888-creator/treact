@@ -386,7 +386,26 @@ div.features-section > div {
   gap: 30px;
   align-items: stretch;
 }
+/* Parent Container */
+.testimonials-section.ai-style-change-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
 
+/* Child Columns (Image and Text Containers) */
+.testimonials-section.ai-style-change-1 > div {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* Responsive Image Handling */
+.testimonials-section.ai-style-change-1 .image-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /* Parent Container */
 .testimonials-section {
   display: left;
