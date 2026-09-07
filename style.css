@@ -279,3 +279,18 @@ body {
   background-color: #1a202c; /* Deep dark background */
   color: #a0aec0; /* Soft muted text color */
 }   
+
+.footer-section {
+  background-color: var(--text-dark);
+  color: #ffffff;
+  padding: 24px 16px;
+  margin-top: 64px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+}
