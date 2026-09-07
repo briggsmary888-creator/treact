@@ -69,65 +69,21 @@ body {
   }
 }
 
-/* Center and space the header text */
-.feature-header {
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-/* This controls the individual features cards inside the grid */
-.your-features-container > div,
-.feature-card {
-  display: flex;
-  flex-direction: column; /* Forces content insidethe card to stack vertically */
-  align-items: center; /* Centers the text and icon horizontally */
-  text-align: center; /* Aligns text to the center */
-  padding: 20px;
-}
-
-/* Force the container to display as a horizontal grid row */
-div.your-features-container {
+/* This sets up the horizontal row of three */
+div.features-section {
   display: grid !important;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr) !important;
   gap: 20px;
   width: 100%;
 }
 
-/* Ensure the cards inside stack their internal text vertically */
-div.your-features-container > div {
+/* This targets the actual card containers and stacks their content verically */
+div.features-section > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.item-class {
-  flex: 1 1 calc(33.333% - 20px);
-  min-width: 250px;
-}
-
-/* Optional styles to make the individual cards look clean */
-.card {
-  border: 1px solid #ccc;
   padding: 20px;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
-}
-
-.your-parent-container-class {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card-container {
-  display: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap;
 }
 
 .value-section {
