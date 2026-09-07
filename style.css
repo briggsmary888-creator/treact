@@ -157,18 +157,6 @@ body {
   align-items: flex-start;
 }
 
-.value-icon-box {
-  background-color: #f7fafc;
-  font-size: 1.0rem;
-  padding: 0.75rem;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-}
-
 .value-info h2 {
   margin: 0 auto;
   font-size: 1.25rem;
@@ -179,11 +167,6 @@ body {
   margin: 0 auto;
   color: #718096;
   line-height: 1.5;
-}
-
-.value-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Example relative sizing */
 }
 
 /* Move the image to the right column */
@@ -199,7 +182,7 @@ body {
 
 /* Applied to the target image within the grid container */
 .value-section img {
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
 }
@@ -209,10 +192,6 @@ body {
     flex-direction: column;
     gap: 3rem;
   }
-  .value-text-content {
-    text-align: center;
-  }
-}
 
 /* Styling the overall section */
 .pricing-section {
