@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 .html,
 body {
   height: 100%;
   margin: 0;
   padding: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
+=======
+.html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0 auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -15,8 +23,13 @@ body {
   text-align: center;
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
   .features-container {
+=======
+@media (max-width: 768px){
+.features-container {
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
     flex-direction: column;
   }
 }
@@ -31,7 +44,12 @@ body {
 
 /* Target your main layout section classes */
 .pricing-grid,
+<<<<<<< HEAD
 .testimonial-section banner {
+=======
+.testimonial-section
+banner {
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
   margin: 80px;
 }
 
@@ -50,6 +68,7 @@ body {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
+<<<<<<< HEAD
 }
 
 .image-cloumn,
@@ -130,6 +149,80 @@ div.features-section > div {
 /* Ensure text container fills the remaining 60% of the space */
 .row-text {
   flex: 1;
+=======
+  }
+
+.image-cloumn, .text-column {
+    flex: 2;
+  }
+
+  .image-column img {
+    width: 100%; 
+    height: auto;
+  }
+
+  /* Responsive design for moblie screens */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;  /* Stacks them verically on small screen */
+    }
+  }
+
+
+
+/* Center and space the header text */
+.feature-header {
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* The box container holding all 6 cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates exactly 3 columns of equal width */
+  gap: 20px;                             /* Adds space between the cards */
+  padding: 20px;
+  max-width: 1200px;                     /* Centers the grid nicely on the screen */
+  margin: 0 auto;
+}
+
+/* Optional styles to make the individual cards look clean */
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.01);
+}
+
+.your-parent-container-class {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.row-section {
+  overflow: hidden; /* Clearfix */
+}
+
+.row-section img {
+  float: left;
+  margin-right: 20px;
+  width: 40%;
+}
+
+.row-text {
+  overflow: hidden; /* Prevents text from wrapping under the image */
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
 }
 
 .value-section {
@@ -205,7 +298,11 @@ div.features-section > div {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+=======
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
 }
 
 .value-info h2 {
@@ -220,7 +317,12 @@ div.features-section > div {
   line-height: 1.5;
 }
 
+<<<<<<< HEAD
   .value-section {
+=======
+* Target the container to ensure the grid structure is defined */
+.value-section {
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
   display: grid;
   grid-template-columns: 1fr 1fr; /* Example relative sizing */
 }
@@ -250,12 +352,20 @@ div.features-section > div {
 .pricing-card-Business,
 .pricing-card-Enterprise {
   display: block; /* Changes from the invalid 'neo-grid' to a standard block layout */
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 100%; 
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
   box-sizing: border-box; /* Ensures padding doesn't push the cards past 100% width */
 }
 
 .pricing-card-Personal h2 {
+<<<<<<< HEAD
   text-align: center;
+=======
+  text-align: center; 
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
 }
 
 .pricing-card-Personal div {
@@ -316,6 +426,7 @@ div.features-section > div {
 .pricing-grid {
   display: flex;
   justify-content: space-between;
+<<<<<<< HEAD
   gap: 30px;
   align-items: stretch;
 }
@@ -337,6 +448,10 @@ div.features-section > div {
 /* Text area (.text-content) */
 .text-content {
   flex: 1;
+=======
+  gap: 30px; 
+  align-items: stretch;                   
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
 }
 
 .testimonial-section {
@@ -348,6 +463,10 @@ div.features-section > div {
 .testimonial-container {
   min-width: 300px;
   margin: 0 auto;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
 }
 
 .testimonial-title {
@@ -363,18 +482,29 @@ div.features-section > div {
   background-color: #fff;
   padding: 2rem;
   border-radius: 8px;
+<<<<<<< HEAD
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
 
 /* Responsive breakpoint for mobile screens */
 @media (max-width: 768px) {
+=======
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+
+/* Responsive breakpoint for mobile screens */
+@media (max-width: 768px){
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
   .textimonial-card {
     flex-direction: column;
     gap: 20pc;
   }
 }
 
+<<<<<<< HEAD
 .testimonial-container {
   display: flex; /* Aligns items side-by-side */
   align-items: center; /* Centers them verically */
@@ -403,6 +533,16 @@ div.features-section > div {
 }
 
 .testimonial-text {
+=======
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 40%;
+  object-fit: cover;
+}
+
+testimonial-text {
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
   font-size: 1.1rem;
   font-style: italic;
   color: #555;
@@ -432,9 +572,15 @@ div.features-section > div {
 
 /* Image placement */
 .value-section img {
+<<<<<<< HEAD
   display: block;
   width: 100%;
   height: auto;
+=======
+  display: left;
+  width: 100%;
+  height: 0 auto;
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
 }
 
 /* Paragraph wrapper placement */
@@ -443,6 +589,7 @@ div.features-section > div {
 }
 
 .banner {
+<<<<<<< HEAD
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -496,6 +643,27 @@ li {
 
   /* Optional: Set a width so the image doesn't take up the whole screen */
   width: 300px;
+=======
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* CSS Styling */
+.floated-image {
+   /* This pushes the image to the left and forces text to the right */
+   float: center;
+
+   /* Add margin so the text doesn't touch the image directly */
+   margin-right: 3px;
+   margin-bottom: 1px;
+
+   /* Optional: Set a width so the image doesn't take up the whole screen */
+   width: 300px;
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
 }
 
 /* Centers the conent inside the footer */
@@ -537,5 +705,9 @@ li {
   margin: 0;
   font-size: 14px;
   color: #777;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 2a54f5b4599100426419380130f900b0d2e148ca
