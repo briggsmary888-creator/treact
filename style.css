@@ -316,6 +316,25 @@ banner {
   align-items: stretch;                   
 }
 
+/* Parent Container (.image-content) */
+.image-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image scaling */
+.image-content img {
+  width: 50%;
+  height: auto;
+}
+
+/* Text area (.text-content) */
+.text-content {
+  flex: 1;
+}
+
 .testimonial-section {
   padding: 4rem 2rem;
   background-color: #f9f9f9;
