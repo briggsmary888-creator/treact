@@ -95,9 +95,22 @@
   gap: 50px;
 }
 
-.steps-row:nth-child(even {
+.steps-sontent {
+  flex: 1;
+}
+
+.steps-row:nth-child(even) {
   flex-direction: row-reverse;
-})
+}
+
+/* Responsive adjustment for phones and small tablets */
+@media (max-width: 768px) {
+  .steps-row, .steps-row:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+}
 
 .value-section {
   display: flex;
