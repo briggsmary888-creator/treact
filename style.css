@@ -71,9 +71,16 @@ body {
 .features-card-4,
 .features-card-5,
 .features-card-6 {
-  width:30%;
+  width:100%;
   box-sizing: border-box;
   text-align: center;
+}
+
+/* Suggested styles for the source CSS */
+.your-features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; /* Added to provide visual separation between cards */
 }
 
 .value-section {
