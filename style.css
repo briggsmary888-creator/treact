@@ -341,41 +341,35 @@ body {
   width: fit-content;
 }
 
-/* Configure custom banner to stack and center children */
-.banner {
-  display: center;
-  align-items: stretch;
-  justify-items: center;
-  text-align: center;
+/* Potential fix for the parent container */
+.call-to-action-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* 1. Center the parent container in the viewport */
+.call-to-action-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
-/* Center heading text */
-h2 {
+/* 2. Align internal banner content */
+banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin: 0 auto;
 }
 
-/* Reset list padding and center items */
-ul {
-  padding: 0;
-  margin: 0 auto;
+/* 3. Normalize list for centered layout */
+banner ul {
   list-style-position: inside;
-  text-align: center;
-}
-
-li {
-  text-align: center;
-}
-
-/* CSS Styling */
-.floated-image {
-   /* This pushes the image to the left and forces text to the right */
-   float: center;/* Add margin so the text doesn't touch the image directly */
-   margin-right: 0 auto;
-   margin-bottom: 1px;/* Optional: Set a width so the image doesn't take up the whole screen */
-   width: 300px;
+  padding-left: 0;
 }
 
 /* Centers the conent inside the footer */
