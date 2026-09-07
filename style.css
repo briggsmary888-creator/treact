@@ -1,0 +1,485 @@
+.html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0 auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.nav {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px){
+.features-container {
+    flex-direction: column;
+  }
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Target your main layout section classes */
+.pricing-grid,
+.testimonial-section
+banner {
+  margin: 80px;
+}
+
+/* Optional: Remove margin from the very last section */
+.section:last-of-type {
+  margin: 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+
+.image-cloumn, .text-column {
+    flex: 2;
+  }
+
+  .image-column img {
+    width: 100%; 
+    height: auto;
+  }
+
+  /* Responsive design for moblie screens */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;  /* Stacks them verically on small screen */
+    }
+  }
+
+
+
+/* Center and space the header text */
+.feature-header {
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.container-class {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item-class {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 250px;
+}
+
+
+
+/* Optional styles to make the individual cards look clean */
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.01);
+}
+
+.your-parent-container-class {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.row-section {
+  overflow: hidden; /* Clearfix */
+}
+
+.row-section img {
+  float: left;
+  margin-right: 20px;
+  width: 40%;
+}
+
+.row-text {
+  overflow: hidden; /* Prevents text from wrapping under the image */
+}
+
+.value-section {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 2rem;
+}
+
+.value-section img {
+  grid-row: 1 / span 10; /* Spans multiple rows if there are many paragraphs */
+  width: 100%;
+}
+
+.value-section {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+}
+
+.value-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.value-text-content {
+  flex: 1;
+  text-align: left;
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  color: var(--accent-color, #6574cd);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.value-heading {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.value-description {
+  color: #718096;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.value-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.value-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.value-icon-box {
+  background-color: #f7fafc;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.value-info h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: #2d3748;
+}
+
+.value-info p {
+  margin: 0;
+  color: #718096;
+  line-height: 1.5;
+}
+
+* Target the container to ensure the grid structure is defined */
+.value-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Example relative sizing */
+}
+
+/* Move the image to the right column */
+.value-section img {
+  grid-column: 2;
+  grid-row: 1 / span 10; /* Maintain vertical span if necessary */
+}
+
+/* Move the text content to the left column */
+.value-section p {
+  grid-column: 1;
+}
+
+@media (max-eidth: 900px) {
+  .value-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .value-text-content {
+    text-align: center;
+  }
+}
+
+.pricing-card-Personal,
+.pricing-card-Business,
+.pricing-card-Enterprise {
+  display: block; /* Changes from the invalid 'neo-grid' to a standard block layout */
+  width: 100%; 
+  box-sizing: border-box; /* Ensures padding doesn't push the cards past 100% width */
+}
+
+.pricing-card-Personal h2 {
+  text-align: center; 
+}
+
+.pricing-card-Personal div {
+  text-align: center;
+}
+
+.pricing-card-Personal p {
+  text-align: center;
+}
+
+.pricing-card-Personal ul {
+  text-align: center;
+}
+
+.pricing-card-Personal li {
+  text-align: center;
+}
+
+.pricing-card-Business h2 {
+  text-align: center;
+}
+.pricing-card-Business div {
+  text-align: center;
+}
+
+.pricing-card-Business p {
+  text-align: center;
+}
+
+.pricing-card-Business ul {
+  text-align: center;
+}
+
+.pricing-card-Business li {
+  text-align: center;
+}
+
+.pricing-card-Enterprise h2 {
+  text-align: center;
+}
+
+.pricing-card-Enterprise div {
+  text-align: center;
+}
+
+.pricing-card-Enterprise p {
+  text-align: center;
+}
+
+.pricing-card-Enterprise ul {
+  text-align: center;
+}
+
+.pricing-card-Enterprise li {
+  text-align: center;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; 
+  align-items: stretch;                   
+}
+
+.testimonial-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial-container {
+  min-width: 300px;
+  margin: 0 auto;
+
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+
+/* Responsive breakpoint for mobile screens */
+@media (max-width: 768px){
+  .textimonial-card {
+    flex-direction: column;
+    gap: 20pc;
+  }
+}
+
+.testimonial-container {
+  display: flex;                   /* Aligns items side-by-side */
+  align-items: center;             /* Centers them verically */
+  justify-content: space-between;  /* Spaces them out evenly */
+  gap: 20px;                       /* Adds space between the image and text */
+}
+
+/* Parent wrappper that holds both sides */
+.testimonial-section {
+display: flex;          /* Aligns items side-by-side */
+align-items: center;    /* Centers themverically */
+justify-content: space-between; /* Pushes them to left and right */
+gap: 30px;              /* Adds spacing between image and text */
+}
+
+/* Forces both sides to take up equal width */
+.image-section-img,
+.text-content {
+  flex: 1;
+}
+
+/* Optional: Ensures the SVG image scales nicely */
+.image-section-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.testimonial-role {
+  margin: 1;
+  font-size: 0.9rem;
+  color: var(--accent-color, #777);
+}
+
+/* Container adjustment */
+.value-section {
+  display: grid;
+  align-items: right;
+  gap: 20px;
+  margin: 0;
+}
+
+/* Image placement */
+.value-section img {
+  display: left;
+  width: 100%;
+  height: 0 auto;
+}
+
+/* Paragraph wrapper placement */
+.text-content-wrapper {
+  grid-column: 1;
+}
+
+.banner {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* CSS Styling */
+.floated-image {
+   /* This pushes the image to the left and forces text to the right */
+   float: center;
+
+   /* Add margin so the text doesn't touch the image directly */
+   margin-right: 3px;
+   margin-bottom: 1px;
+
+   /* Optional: Set a width so the image doesn't take up the whole screen */
+   width: 300px;
+}
+
+/* Centers the conent inside the footer */
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.legal-subtext {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.legal-subtextt:hover {
+  text-decoration: underline;
+}
+
+.footer-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
