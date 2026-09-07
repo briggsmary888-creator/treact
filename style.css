@@ -1,52 +1,57 @@
 /* 1. INJECT TAILWIND CORE
-   Trect relies on tailwind's utility layers to function properly *'
-   @tailwind base;
-   @tailwind: components;
-   @tailwind: utilities;
+   Treact relies on Tailwind's utility layers to function properly */
+@import "tailwindcss";
 
-   /* 2. TREACT DESIGN SYSTEMSTOKENS
-      Define custom colors matching Treact's vibrant, modern palette */
-      :root {
-        --primary-500: #6415ff;
-        --primary-700: #5011cc;
-        --secondary-500: #7c8ba1;
-        --text-dark: #243e63;
-        --text-light: #7c8ba1;
-      }
-
-      /* 3. BASE ELEMENT OVERRIDES 
-          Treact components dynamically read these base styles */
-          body {
-            margin: 0;
-            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: #f7fafc;
-            color: var(--text-dark);
-            overflow: hidden;
-          }
-.nav-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #ffffff;
+@layer components {
+  /* Tailwind component layer */
 }
 
-.nav-section .nav-icon {
-  display: grid;
-  grid-template-columns: auto;
-  max-height: 50px;
+@layer utilities {
+  /* Tailwind utility layer */
+}
+
+/* 2. TREACT DESIGN SYSTEM TOKENS
+   Define custom colors matching Treact's vibrant, modern palette */
+:root {
+  --primary-500: #6415ff;
+  --primary-700: #5011cc;
+  --secondary-500: #7c8ba1;
+  --text-dark: #243e63;
+  --text-light: #7c8ba1;
+}
+
+/* 3. BASE ELEMENT OVERRIDES
+   Treact components dynamically read these base styles */
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f7fafc;
+  color: var(--text-dark);
+  overflow: hidden;
+}
+
+.nav-section {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-section img {
+  min-height: 50px;
   width: auto;
   object-fit: contain;
 }
 
 .nav-icon {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .features-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 60px 40px;
   max-width: 1200px;
@@ -58,13 +63,20 @@
   padding: 30px;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
-  box-shadow:  0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.features-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
 }
 
 .features-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .features-icon {
@@ -93,6 +105,30 @@
   line-height: 1.6;
 }
 
+.features-card-1,
+.features-card-2,
+.features-card-3,
+.features-card-4,
+.features-card-5,
+.features-card-6 {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.features-card-1 img,
+.features-card-2 img,
+.features-card-3 img,
+.features-card-4 img,
+.features-card-5 img,
+.features-card-6 img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
 .steps-section {
   display: flex;
   flex-direction: column;
@@ -108,7 +144,7 @@
   gap: 50px;
 }
 
-.steps-sontent {
+.steps-content {
   flex: 1;
 }
 
@@ -118,7 +154,8 @@
 
 /* Responsive adjustment for phones and small tablets */
 @media (max-width: 768px) {
-  .steps-row, .steps-row:nth-child(even) {
+  .steps-row,
+  .steps-row:nth-child(even) {
     flex-direction: column;
     text-align: center;
     gap: 30px;
@@ -138,9 +175,9 @@
 /* On smaller screens, stack the text and image vertically */
 @media (max-width: 768px) {
   .value-section {
-     flex-direction: column;
-     text-align: center;
-     gap: 40px;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
   }
 }
 
