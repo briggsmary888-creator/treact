@@ -423,6 +423,12 @@ div.features-section > div {
   flex-grow: 1;
 }
 
+div {
+  display: flex;
+  flex-direction: column; /* To maintain vertical stacking if needed */
+  align-items: center;
+}
+
 /* Image placement */
 .value-section img {
   width: 50%;
