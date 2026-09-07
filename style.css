@@ -15,6 +15,7 @@ body {
 }
 
 .nav {
+  width: 100%;
   background-color: var(--primary-color);
   color: #ffffff;
   padding: 1rem;
@@ -45,7 +46,7 @@ body {
 }
 
 .image-column img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -124,7 +125,7 @@ div.features-section > div {
   }
 
   .image-column img {
-    width: 100%; 
+    width: 50%; 
     height: auto;
   }
 
@@ -464,20 +465,6 @@ ul {
 }
 
 li {
-  text-align: center;
-}
-
-/* CSS Styling */
-.floated-image {
-  /* This pushes the image to the left and forces text to the right */
-  float: center; /* Add margin so the text doesn't touch the image directly */
-  margin-right: 3px;
-  margin-bottom: 1px;/* Optional: Set a width so the image doesn't take up the whole screen */
-  width: 300px;
-  display: flexbox;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--accent-color);
   text-align: center;
 }
 
