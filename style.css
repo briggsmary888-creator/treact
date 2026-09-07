@@ -197,6 +197,13 @@ body {
   grid-column: 1;
 }
 
+/* Applied to the target image within the grid container */
+.value-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-eidth: 900px) {
   .value-container {
     flex-direction: column;
