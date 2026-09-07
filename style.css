@@ -1,8 +1,9 @@
-.html, body {
+.html,
+body {
   height: 100%;
   margin: 0;
   padding: 0 auto;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -14,8 +15,8 @@
   text-align: center;
 }
 
-@media (max-width: 768px){
-.features-container {
+@media (max-width: 768px) {
+  .features-container {
     flex-direction: column;
   }
 }
@@ -30,8 +31,7 @@
 
 /* Target your main layout section classes */
 .pricing-grid,
-.testimonial-section
-banner {
+.testimonial-section banner {
   margin: 80px;
 }
 
@@ -50,25 +50,24 @@ banner {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.image-cloumn,
+.text-column {
+  flex: 2;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive design for moblie screens */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* Stacks them verically on small screen */
   }
-
-.image-cloumn, .text-column {
-    flex: 2;
-  }
-
-  .image-column img {
-    width: 100%; 
-    height: auto;
-  }
-
-  /* Responsive design for moblie screens */
-  @media (max-width: 768px) {
-    .hero-container {
-      flex-direction: column;  /* Stacks them verically on small screen */
-    }
-  }
-
-
+}
 
 /* Center and space the header text */
 .feature-header {
@@ -76,10 +75,30 @@ banner {
   margin-bottom: 40px;
 }
 
-.container-class {
+/* This controls the individual features cards inside the grid */
+.your-features-container > div,
+.feature-card {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* Forces content insidethe card to stack vertically */
+  align-items: center; /* Centers the text and icon horizontally */
+  text-align: center; /* Aligns text to the center */
+  padding: 20px;
+}
+
+/* Force the container to display as a horizontal grid row */
+div.your-features-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  width: 100%;
+}
+
+/* Ensure the cards inside stack their internal text vertically */
+div.your-features-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .item-class {
@@ -87,15 +106,13 @@ banner {
   min-width: 250px;
 }
 
-
-
 /* Optional styles to make the individual cards look clean */
 .card {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
 }
 
 .your-parent-container-class {
@@ -111,20 +128,6 @@ banner {
   gap: 20px;
   padding: 20px;
   flex-wrap: wrap;
-}
-
-.row-section {
-  overflow: hidden; /* Clearfix */
-}
-
-.row-section img {
-  float: left;
-  margin-right: 20px;
-  width: 40%;
-}
-
-.row-text {
-  overflow: hidden; /* Prevents text from wrapping under the image */
 }
 
 .value-section {
@@ -200,7 +203,7 @@ banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
 .value-info h2 {
@@ -215,8 +218,19 @@ banner {
   line-height: 1.5;
 }
 
-* Target the container to ensure the grid structure is defined */
-.value-section {
+*
+  Target
+  the
+  container
+  to
+  ensure
+  the
+  grid
+  structure
+  is
+  defined
+  */
+  .value-section {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Example relative sizing */
 }
@@ -246,12 +260,12 @@ banner {
 .pricing-card-Business,
 .pricing-card-Enterprise {
   display: block; /* Changes from the invalid 'neo-grid' to a standard block layout */
-  width: 100%; 
+  width: 100%;
   box-sizing: border-box; /* Ensures padding doesn't push the cards past 100% width */
 }
 
 .pricing-card-Personal h2 {
-  text-align: center; 
+  text-align: center;
 }
 
 .pricing-card-Personal div {
@@ -312,8 +326,8 @@ banner {
 .pricing-grid {
   display: flex;
   justify-content: space-between;
-  gap: 30px; 
-  align-items: stretch;                   
+  gap: 30px;
+  align-items: stretch;
 }
 
 /* Parent Container (.image-content) */
@@ -344,7 +358,6 @@ banner {
 .testimonial-container {
   min-width: 300px;
   margin: 0 auto;
-
 }
 
 .testimonial-title {
@@ -360,13 +373,12 @@ banner {
   background-color: #fff;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
 
-
 /* Responsive breakpoint for mobile screens */
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .textimonial-card {
     flex-direction: column;
     gap: 20pc;
@@ -374,18 +386,18 @@ banner {
 }
 
 .testimonial-container {
-  display: flex;                   /* Aligns items side-by-side */
-  align-items: center;             /* Centers them verically */
-  justify-content: space-between;  /* Spaces them out evenly */
-  gap: 20px;                       /* Adds space between the image and text */
+  display: flex; /* Aligns items side-by-side */
+  align-items: center; /* Centers them verically */
+  justify-content: space-between; /* Spaces them out evenly */
+  gap: 20px; /* Adds space between the image and text */
 }
 
 /* Parent wrappper that holds both sides */
 .testimonial-section {
-display: flex;          /* Aligns items side-by-side */
-align-items: center;    /* Centers themverically */
-justify-content: space-between; /* Pushes them to left and right */
-gap: 30px;              /* Adds spacing between image and text */
+  display: flex; /* Aligns items side-by-side */
+  align-items: center; /* Centers themverically */
+  justify-content: space-between; /* Pushes them to left and right */
+  gap: 30px; /* Adds spacing between image and text */
 }
 
 /* Forces both sides to take up equal width */
@@ -451,15 +463,15 @@ gap: 30px;              /* Adds spacing between image and text */
 
 /* CSS Styling */
 .floated-image {
-   /* This pushes the image to the left and forces text to the right */
-   float: center;
+  /* This pushes the image to the left and forces text to the right */
+  float: center;
 
-   /* Add margin so the text doesn't touch the image directly */
-   margin-right: 3px;
-   margin-bottom: 1px;
+  /* Add margin so the text doesn't touch the image directly */
+  margin-right: 3px;
+  margin-bottom: 1px;
 
-   /* Optional: Set a width so the image doesn't take up the whole screen */
-   width: 300px;
+  /* Optional: Set a width so the image doesn't take up the whole screen */
+  width: 300px;
 }
 
 /* Centers the conent inside the footer */
