@@ -58,24 +58,22 @@ body {
     }
 }
 
-.features-container {
-  .features-card-1,
-  .features-card-2,
-  .features-card-3,
-  .features-card-4,
-  .features-card-5,
-  .features-card-6 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
 .your-parent-container-class {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.features-card-1,
+.features-card-2,
+.features-card-3,
+.features-card-4,
+.features-card-5,
+.features-card-6 {
+  width:30%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .value-section {
