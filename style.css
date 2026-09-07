@@ -27,11 +27,6 @@ body {
   }
 }
 
-/* Optional: Remove margin from the very last section */
-.section:last-of-type {
-  margin: 0 auto;
-}
-
 .hero-container {
   display: flex;
   flex-direction: row-reverse;
@@ -311,19 +306,38 @@ div.features-section > div {
   }
 }
 
+/* Styling the overall section */
+.pricing-section {
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pricing-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .pricing-card-Personal,
 .pricing-card-Business,
 .pricing-card-Enterprise {
-  display: block; /* Changes from the invalid 'neo-grid' to a standard block layout */
+  display: flex; /* Changes from the invalid 'neo-grid' to a standard block layout */
   width: 100%;
   box-sizing: border-box; /* Ensures padding doesn't push the cards past 100% width */
 }
 
 .pricing-card-Personal h2 {
+  display: block;
   text-align: center; 
 }
 
 .pricing-card-Personal div {
+  display: block;
   text-align: center;
 }
 
@@ -400,7 +414,7 @@ div.features-section > div {
 
 /* Responsive Image Handling */
 .testimonials-section.ai-style-change-1 .image-content img {
-  width: 100%;
+  width: 40%;
   height: auto;
   display: block;
 }
@@ -409,12 +423,6 @@ div.features-section > div {
   display: left;
   align-items: center;
   gap: 20px;
-}
-
-/* Image Container */
-.image-content {
-  width: 0 auto;
-  flex-shrink: 1;
 }
 
 /* Text Content Container */
