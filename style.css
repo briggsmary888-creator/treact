@@ -65,8 +65,28 @@ body {
 /* Responsive design for moblie screens */
 @media (max-width: 768px) {
   .hero-container {
-    flex-direction: column; /* Stacks them verically on small screen */
-  }
+    display: flex;
+    /* Any hero mobile styles go here */
+    }
+}
+
+.features-card-1,
+.features-card-2,
+.features-card-3,
+.features-card-4,
+.features-card-5,
+.features-card-6 {
+  display: block;  
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+/* Stackes icon, h2, and p verticaly inside each card */
+div.features-section > div {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
 /* This sets up the horizontal row of three */
@@ -174,18 +194,6 @@ div.features-section > div {
   line-height: 1.5;
 }
 
-*
-  Target
-  the
-  container
-  to
-  ensure
-  the
-  grid
-  structure
-  is
-  defined
-  */
   .value-section {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Example relative sizing */
