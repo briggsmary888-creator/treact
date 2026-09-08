@@ -67,7 +67,7 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.features-card img {
+.features-card-1 img {
   width: 80px;
   height: 80px;
   object-fit: contain;
@@ -105,28 +105,13 @@ body {
   line-height: 1.6;
 }
 
-.features-card-1,
-.features-card-2,
-.features-card-3,
-.features-card-4,
-.features-card-5,
-.features-card-6 {
-  background-color: #ffffff;
-  padding: 24px;
-  border-radius: 8px;
-  text-align: center;
-}
-
 .features-card-1 img,
 .features-card-2 img,
 .features-card-3 img,
 .features-card-4 img,
 .features-card-5 img,
 .features-card-6 img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin-bottom: 16px;
+  flex: content;
 }
 
 .steps-section {
