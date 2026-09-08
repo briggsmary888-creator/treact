@@ -38,15 +38,10 @@ body {
   justify-content: space-between;
 }
 
+/* Potential fix for the image overflow within .nav-section */
 .nav-section img {
-  min-height: 50px;
-  width: auto;
-  object-fit: contain;
-}
-
-.nav-icon {
-  display: flex;
-  gap: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .features-section {
@@ -56,6 +51,14 @@ body {
   padding: 60px 40px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Potential fix for the feature cards parent container */
+.features-card-container-parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .features-card {
