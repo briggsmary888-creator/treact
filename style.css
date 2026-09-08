@@ -44,7 +44,7 @@ body {
   height: auto;
 }
 
-.features-section {
+.features-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -54,58 +54,11 @@ body {
 }
 
 /* Potential fix for the feature cards parent container */
-.features-card-container-parent {
+.features-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
-}
-
-.features-card {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.features-card-1 img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-.features-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.features-icon {
-  width: 50px;
-  height: 50px;
-  background-color: #ebf8ff;
-  color: #3182ce;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.features-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: 12px;
-}
-
-.features-description {
-  font-size: 16px;
-  color: #4a5568;
-  line-height: 1.6;
 }
 
 .features-card-1 img,
@@ -188,51 +141,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.pricing-card.popular {
-  border-color: var(--primary-500);
-  box-shadow: 0 10px 15px -3px rgba(100,117,255,0.2);
-  position: relative;
-}
-
-.pricing-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.pricing-price {
-  font-size: 40px;
-  font-weight: 800;
-  color: var(--text-dark);
-  margin: 24px 0;
-}
-
-.pricing-price span {
-  font-size: 16px;
-  font-weight: 500;
-  color: #4a5568;
-}
-
-.pricing-button {
-  display: block;
-  width: 100%;
-  padding: 12px 24px;
-  background-color: var(--primary-500);
-  color: #ffffff;
-  font-weight: 600;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 32px;
-  transition: background-color 0.2s;
-}
-
-.pricing-button:hover {
-  background-color: var(--primary-700);
 }
 
 .testimonial-section {
