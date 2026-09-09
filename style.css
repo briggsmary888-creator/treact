@@ -312,6 +312,20 @@ nav .btn-signup:hover {
   margin-bottom: 32px;
 }
 
+/* Suggested CSS optimizations for the img element */
+img {
+  object-fit: contain;
+  aspect-ratio: 1093 / 701;
+  width: 100%;
+  height: auto;
+}
+
+/* Review parent container alignment if only one child is present */
+.nav-section {
+  display: flex;
+  justify-content: center; /* Adjust based on desired alignment */
+}
+
 /* Call To Action Button Styles */
 .cta-button {
   display: inline-block;
@@ -366,7 +380,7 @@ nav .btn-signup:hover {
 }
 
 .steps-row:nth-child(even) {
-  flex-direction: column; /* Prevents the  reverse rule on mobile */
+  flex-direction: column; /* Prevents the reverse rule */
 }
 
 .value-section {
