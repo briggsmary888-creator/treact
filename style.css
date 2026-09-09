@@ -1,16 +1,23 @@
-/* 1. INJECT TAILWIND CORE
-   Treact relies on Tailwind's utility layers to function properly */
-@import "tailwindcss";
-
-@layer components {
-  /* Tailwind component layer */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
-@layer utilities {
-  /* Tailwind utility layer */
-}
-
-/* 2. TREACT DESIGN SYSTEM TOKENS
+/* TREACT DESIGN SYSTEM TOKENS
    Define custom colors matching Treact's vibrant, modern palette */
 :root {
   --primary-500: #6415ff;
@@ -20,14 +27,35 @@
   --text-light: #7c8ba1;
 }
 
-/* 3. BASE ELEMENT OVERRIDES
+/* BASE ELEMENT OVERRIDES
    Treact components dynamically read these base styles */
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   background-color: #f7fafc;
   color: var(--text-dark);
   overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-section {
@@ -42,6 +70,77 @@ body {
 .nav-section img {
   max-width: 100%;
   height: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  color: #243e63;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #6415ff;
+  margin-right: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #243e63;
+  font-weight: 600;
+  margin-left: 2rem;
+  font-size: 0.95;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #6415ff;
+}
+
+nav .btn-signup {
+  background-color: #6415ff;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  margin-left: 2rem;
+}
+
+nav .btn-signup:hover {
+  background-color: #500ad4;
+  color: #ffffff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 5%;
+  gap: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h1 span {
+  color: #6415ff;
+}
+
+.hero-content p {
+  color: #7c8ba1;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -69,33 +168,93 @@ body {
   margin-bottom: 16px;
 }
 
-/* Styling the paragraph */
-.features-card p {
-  color: #718096; /* Muted gray text */
-  line-height: 1.6;
+.cta-form {
+  display: flex;
+  position: relative;
+  max-width: 450px;
+  margin-bottom: 3rem;
 }
 
-.cta-button {
-  display: inline-block;
-  margin-top: 24px;
-  padding: 12px 24px;
-  background-color: #6366f1;
+.cta-form input {
+  width: 100%;
+  padding: 1.25rem 1.5 rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 9999px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.cta-form input:focus {
+  border-color: #a0aec0;
+}
+
+.cta-form button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  background-color: #6415ff;
   color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
+  border: none;
+  padding: 0 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-/* Base layout Grid Configuration */ 
+.cta-form button:hover {
+  background-color: #500ad4;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 968px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .cta-form {
+    margin: 0 auto 3rem auto;
+  }
+
+  nav a:not(.btn-signup) {
+    display: none;
+  }
+}
+
+/* Base layout Grid Configuration */
 .features-section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 60px 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 48px;
+}
+
+@media (max-width: 968px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .cta-form {
+    margin: 0 auto 3rem auto;
+  }
+
+  nav a:not(.btn-signup) {
+    display: none;
+  }
 }
 
 /* Text Column Constraints */
@@ -105,7 +264,7 @@ body {
 }
 
 /* Right Media Asset container constraints */
-.features-icon-1 {
+.features-icons-1 {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -113,7 +272,7 @@ body {
 }
 
 /* Clean Responsive Scaling for the Image Asset */
-.features-icon-1 img {
+.features-icons-1 img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -121,7 +280,7 @@ body {
 
 /* Mobile Scaling Override Rules */
 @media (max-width: 768px) {
-  .features-section {
+  .feature-section {
     flex-direction: column;
     text-align: center;
     gap: 32px;
@@ -129,7 +288,7 @@ body {
 }
 
 /* Custom Typography Adjustments */
-.features-card h2:frist-of type {
+.feature-card h2:first-of type {
   color: #6366f1; /* Indigo color theme accent */
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -138,7 +297,7 @@ body {
   font-weight: 700;
 }
 
-.features-card h2:nth-of-type(2) {
+.feature-card h2:nth-of-type(2) {
   color: #1a202c; /* Deep slate gray */
   font-size: 2.25rem;
   font-weight: 900;
@@ -146,7 +305,7 @@ body {
   margin-bottom: 20px;
 }
 
-.features-card p {
+.feature-card p {
   color: #718096; /* Clean readable body font gray */
   font-size: 1rem;
   line-height: 1.7;
@@ -156,14 +315,6 @@ body {
 /* Call To Action Button Styles */
 .cta-button {
   display: inline-block;
-  padding: 12px 32px;
-  background-color: #6366f1; /* Solid primary brand fill */
-  color: #ffffff; 
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 9999px; /* Rounded pill style shape */
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.2);
 }
 
 /* Smooth Interactive Hover Effects */
@@ -180,6 +331,14 @@ body {
   padding: 80px 40px;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.steps-row img {
+  width: 100%;
+  max-width: 500px; /* Limits the max width so it doesn't get too large */
+  height: auto; /* Maintains the original aspect ratio */
+  object-fit: cover; /* Keeps the image sharp and prevents distortion */
+  border-radius: 8px; /* Optional: adds smooth rounded corners */
 }
 
 .steps-row {
@@ -204,6 +363,10 @@ body {
     text-align: center;
     gap: 30px;
   }
+}
+
+.steps-row:nth-child(even) {
+  flex-direction: column; /* Prevents the  reverse rule on mobile */
 }
 
 .value-section {
@@ -263,7 +426,9 @@ body {
   text-align: center;
   gap: 30px;
   padding: 80px 40px;
-  background-color: var(--text-dark); /* Uses your existing dark color variable */
+  background-color: var(
+    --text-dark
+  ); /* Uses your existing dark color variable */
   color: #ffffff;
   border-radius: 12px;
   max-width: 1120px;
@@ -277,7 +442,7 @@ body {
   padding: 80px 40px 40px 40px;
   background-color: #1a202c; /* Deep dark background */
   color: #a0aec0; /* Soft muted text color */
-}   
+}
 
 .footer-section {
   background-color: var(--text-dark);
@@ -316,8 +481,8 @@ body {
 }
 
 .footer-bottom {
-border-top: 1px solid #4a5568;
-padding-top: 20px;
-font-size: 13px;
-color: #cbd5e0;
+  border-top: 1px solid #4a5568;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #cbd5e0;
 }
