@@ -440,9 +440,7 @@ img {
   text-align: center;
   gap: 30px;
   padding: 80px 40px;
-  background-color: var(
-    --text-dark
-  ); /* Uses your existing dark color variable */
+  background-color: var(--text-dark); /* Uses your existing dark color variable */
   color: #ffffff;
   border-radius: 12px;
   max-width: 1120px;
@@ -453,9 +451,10 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
-  padding: 80px 40px 40px 40px;
-  background-color: #1a202c; /* Deep dark background */
-  color: #a0aec0; /* Soft muted text color */
+  padding: 80px 40px;
+  background-color: var(--text-dark); /* Deep dark background */
+  color: #ffffff; /* white text override */
+  margin: 64px;
 }
 
 .footer-section {
