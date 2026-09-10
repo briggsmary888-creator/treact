@@ -482,6 +482,17 @@ nav .btn-signup:hover {
   width: 100% !important;
 }
 
+/* Stack elements verticallly instead of squishing them side-by-side */
+.testimonial-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start; /* Aligns all text cleanly to the right edge */
+  width: 100% !important;
+  max-width: 600px;       /* Prevents the paragraph from stretching too wide to read */
+  margin-bottom: 40px;    /* Leaves space before your actual customer reviews/cards */
+  box-sizing: border-box;
+}
+
 .testimonial-section {
   display: flex;
   flex-direction: column;
