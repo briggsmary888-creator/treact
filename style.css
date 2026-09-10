@@ -477,16 +477,16 @@ nav .btn-signup:hover {
 
 /* Forces theinner container to expand fully horizontally */
 .pricing-cards {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 32px !important;
+  width: 100% !important;
+  align-items: start;
 }
 
-/* Ensure individual pricing cardsexpand to fill their grid track */
-.pricing-section > div {
-  width: 100%;
-  max-width: 300px;
+/* Ensure each individual plan card expands to its grid track width */
+.pricing-cards > div {
+  width: 100% !important;
 }
 
 .testimonial-section {
