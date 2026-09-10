@@ -496,6 +496,43 @@ nav .btn-signup:hover {
   background-color: #f7fafc; /* Matches your body background */
 }
 
+.testimonial-card {
+  display: flex; /* Aligns child elements side-by-side */
+  align-items: center; /* Vertically centers the image and text */
+  gap: 30px; /* Adds space between the image and the text */
+  max-width: 600px; /* Sets a maximum cardd width */
+  margin: 20px auto;padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.testimonial-image img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  border-radius: 50%; /* Makes the image a neat circle */
+  object-fit: cover; 
+/* Prevents the image from distoring */
+}
+
+.testimonial-content {
+  flex: 1; /* Allows text sectionto take up the remaining space */
+}
+
+testimonial-text {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  margin: 0;
+  font-weight: bold;
+}
+
+.testimonial-title {
+  font-size: 0.9rem;
+  color: #666;
+}
+
 .call-to-action-section {
   display: flex;
   flex-direction: column;
