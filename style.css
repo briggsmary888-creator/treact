@@ -503,7 +503,8 @@ img {
 }
 
 .footer-section {
-  background-color: var(--text-dark);
+  background-color: #b2c4e7;
+  max-width: 100%;
   color: #ffffff;
   padding: 24px 16px;
   margin-top: 64px;
@@ -518,8 +519,8 @@ img {
 }
 
 .footer-bottom {
-  border-top: 1px solid #4a5568;
+  border-top: 1px solid #598ce6;
   padding-top: 20px;
   font-size: 13px;
-  color: #cbd5e0;
+  color: #030c16;
 }
