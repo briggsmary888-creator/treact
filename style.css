@@ -467,17 +467,20 @@ nav .btn-signup:hover {
 
 /* Potential fix to ensure columns expand to fill container and handle children */
 .pricing-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end; /* Pushes all cards to the absolute right side */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   width: 100%; 
+  max-width: 100%;
   box-sizing: border-box;
 }
 
-/* If the intention is to span the header across all columns */
-.pricing-section h2:first-child {
-  grid-column: 1 / -1;
+/* Forces theinner container to expand fully horizontally */
+.pricing-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
 
 /* Ensure individual pricing cardsexpand to fill their grid track */
