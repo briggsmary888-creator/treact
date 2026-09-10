@@ -382,7 +382,7 @@ nav .btn-signup:hover {
   }
  }
 
- 
+
 /* Review parent container alignment if only one child is present */
 .nav-section {
   display: flex;
@@ -508,6 +508,17 @@ nav .btn-signup:hover {
   border-radius: 12px;
   max-width: 1120px;
   margin: 60px auto;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal cloumns */gap: 15px; /* Adds space between the columns and rows */
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #000; /* Change to your preferred link color */
 }
 
 .footer-section {
