@@ -465,25 +465,25 @@ nav .btn-signup:hover {
   }
 }
 
+/* Potential fix to ensure columns expand to fill container and handle children */
 .pricing-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Pushes all cards to the absolute right side */
   gap: 32px;
-  padding: 64px 424px;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%; 
+  box-sizing: border-box;
 }
 
-.pricing-card {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 40px 32px;
-  text-align: center;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: space-between;
+/* If the intention is to span the header across all columns */
+.pricing-section h2:first-child {
+  grid-column: 1 / -1;
+}
+
+/* Ensure individual pricing cardsexpand to fill their grid track */
+.pricing-section > div {
+  width: 100%;
+  max-width: 300px;
 }
 
 .testimonial-section {
@@ -507,11 +507,33 @@ nav .btn-signup:hover {
 }
 
 .testimonial-image img {
-  width: 100px; /* Adjust size as needed */
+  width: 10opx; /* Adjust size as needed */
   height: 100px;
   border-radius: 50%; /* Makes the image a neat circle */
   object-fit: cover; 
 /* Prevents the image from distoring */
+}
+
+/* Container adjustments */
+.image-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Image adjustments */
+.image-section img {
+  width: 60%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* New wrapper to group text elements on the right */
+.text-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .testimonial-content {
