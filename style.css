@@ -401,37 +401,6 @@ nav .btn-signup:hover {
   box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
 }
 
-.steps-section {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 80px 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.steps-row img {
-  width: 100%;
-  max-width: 500px; /* Limits the max width so it doesn't get too large */
-  height: auto; /* Maintains the original aspect ratio */
-  object-fit: cover; /* Keeps the image sharp and prevents distortion */
-  border-radius: 8px; /* Optional: adds smooth rounded corners */
-}
-
-.steps-row {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.steps-content {
-  flex: 1;
-}
-
-.steps-row:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
 /* Responsive adjustment for phones and small tablets */
 @media (max-width: 768px) {
   .steps-row,
@@ -441,9 +410,24 @@ nav .btn-signup:hover {
     gap: 30px;
   }
 }
+/* Container adjustments */
+.steps-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
 
-.steps-row:nth-child(even) {
-  flex-direction: column; /* Prevents the reverse rule */
+/* Image resizing */
+.steps-section img {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Text content wrapper */
+.steps-content {
+  flex: 1;
 }
 
 .value-section {
@@ -463,6 +447,14 @@ nav .btn-signup:hover {
     text-align: center;
     gap: 40px;
   }
+}
+
+/* Suggested updates for the container */
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* Potential fix to ensure columns expand to fill container and handle children */
