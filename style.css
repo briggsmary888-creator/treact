@@ -272,57 +272,6 @@ nav .btn-signup:hover {
   }
 }
 
-/* Text Column Constraints */
-.features-card {
-  flex: 1;
-  max-width: 550px;
-}
-
-/* Right Media Asset container constraints */
-.features-icons-1 {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Clean Responsive Scaling for the Image Asset */
-.features-icons-1 img {
-  max-width: 10%;
-  height: auto;
-  object-fit: contain;
-}
-
-.features-icon-2 img {
-  max-width: 10%;
-  height: auto;
-  object-fit: contain;
-}
-
-.features-icon-3 img {
-  max-width: 10%;
-  height: auto;
-  object-fit: contain;
-}
-
-.features-icon-4 img {
-  max-width: 10%;
-  height: auto;
-  object-fit: contain;
-}
-
-.features-icon-5 img {
-  max-width: 10%;
-  height: auto;
-  object-fit: contain;
-}
-
-.features-icon-6 img {
-  max-width: 10%;
-  height: auto;
-  object-fit: contain;
-}
-
 /* Mobile Scaling Override Rules */
 @media (max-width: 768px) {
   .feature-section {
@@ -332,39 +281,108 @@ nav .btn-signup:hover {
   }
 }
 
-/* Custom Typography Adjustments */
-.feature-card h2:first-of type {
-  color: #6366f1; /* Indigo color theme accent */
-  font-size: 0.875rem;
+/* Container for the features section */
+.features-container {
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Section Subtitle (features) */
+.features-subtitles {
+  color: #3b82f6; /* Blue accent color */
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 12px;
   font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-.feature-card h2:nth-of-type(2) {
-  color: #1a202c; /* Deep slate gray */
-  font-size: 2.25rem;
-  font-weight: 900;
-  line-height: 1.25;
-  margin-bottom: 20px;
+/* Section Main Heading */
+.features-title {
+  font-size: 32px;
+  color: #1e1e1e;
+  font-weight: 800;
+  margin-bottom: 15px;
 }
 
-.feature-card p {
-  color: #718096; /* Clean readable body font gray */
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 32px;
+.features-title span {
+    color: #2563eb;
 }
 
-/* Suggested CSS optimizations for the img element */
-img {
-  object-fit: contain;
-  aspect-ratio: 1093 / 701;
-  width: 100%;
-  height: auto;
+/* Description paragraph below heading */
+.features-desc {
+  color: #666666;
+  font-size: 14px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
 }
 
+/* The grid box with the purple/blue border */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+  gap: 30px;
+  border-radius: 8px;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+/* Individual Feature Item Box */
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-aligined content inside columns */
+  text-align: left;
+}
+
+/* Icon Styling Header Row */
+.features-icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.features-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  color: #3b82f6; /* Accent color for the icons */
+}
+
+/* Features Item Titles(e.g., Secure, 24/7 Support) */
+.feathers-item-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Feature Item Body Text (Lorem Ipsum) */
+.feature-item-text {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Reponsive adjustment for tablets and mobile screes */
+@media (max-width: 900px)
+ {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 xolumns on medium screens */
+  }
+ }
+
+ @media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+ }
+
+ 
 /* Review parent container alignment if only one child is present */
 .nav-section {
   display: flex;
