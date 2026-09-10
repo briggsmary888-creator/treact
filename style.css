@@ -283,11 +283,10 @@ nav .btn-signup:hover {
 
 /* Container for the features section */
 .features-container {
-  min-width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   padding: 40px 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
 }
 
 /* Section Subtitle (features) */
