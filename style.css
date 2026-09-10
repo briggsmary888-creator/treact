@@ -481,7 +481,8 @@ nav .btn-signup:hover {
   grid-template-columns: repeat(3, 1fr) !important;
   gap: 32px !important;
   width: 100% !important;
-  align-items: start;
+  align-items: center; /* Verical */
+  justify-content: center; /* Horizontally */
 }
 
 /* Ensure each individual plan card expands to its grid track width */
