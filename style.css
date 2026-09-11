@@ -275,24 +275,23 @@ nav .btn-signup:hover {
 /* Mobile Scaling Override Rules */
 @media (max-width: 768px) {
   .feature-section {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 32px;
   }
 }
 
 /* Container for the features section */
-.features-icons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.features-icons container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
   gap: 20px;
+  width: 100%;
   padding: 40px 20px;
-  color: #3b82f6; /* Blue accent color */
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
 }
 
 /* Section Main Heading */
