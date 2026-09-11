@@ -384,20 +384,23 @@ nav .btn-signup:hover {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 60px;
   width: auto;
 }
 
 /* Grouped text elements */
 .text-content {
   flex: 1;
+  max-width: 550px;
   display: flex;
   flex-direction: column;
 }
 
 /* Image sizing constraint */
 .value-section img {
-  width: auto;
-  max-width: 100px;
+  order: 2;
+  width: 100%;
+  max-width: 450px;
   height: auto;
 }
 /* On smaller screens, stack the text and image vertically */
