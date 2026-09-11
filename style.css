@@ -378,16 +378,28 @@ nav .btn-signup:hover {
   flex: 1;
 }
 
+/* Layout adjustment for side-by-side display */
 .value-section {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 60px;
-  padding: 100px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: auto;
 }
 
+/* Grouped text elements */
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image sizing constraint */
+.value-section img {
+  width: auto;
+  max-width: 100px;
+  height: auto;
+}
 /* On smaller screens, stack the text and image vertically */
 @media (max-width: 768px) {
   .value-section {
@@ -398,7 +410,7 @@ nav .btn-signup:hover {
 }
 
 /* Suggested updates for the container */
-.pricing-section {
+.pricing-section > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -430,51 +442,14 @@ nav .btn-signup:hover {
   width: 100% !important;
 }
 
-/* Stack elements verticallly instead of squishing them side-by-side */
-.testimonial-header {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start; /* Aligns all text cleanly to the right edge */
-  width: 100% !important;
-  max-width: 600px;       /* Prevents the paragraph from stretching too wide to read */
-  margin-bottom: 40px;    /* Leaves space before your actual customer reviews/cards */
-  box-sizing: border-box;
-}
-
-.testimonial-section {
+.testimonial-section > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 40px;
   padding: 100px 40px;
-  background-color: #f7fafc; /* Matches your body background */
-}
-
-.testimonial-card {
-  display: flex; /* Aligns child elements side-by-side */
-  align-items: center; /* Vertically centers the image and text */
-  gap: 30px; /* Adds space between the image and the text */
-  max-width: 600px; /* Sets a maximum cardd width */
-  margin: 20px auto;padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-}
-
-.testimonial-image img {
-  width: 10opx; /* Adjust size as needed */
-  height: 100px;
-  border-radius: 50%; /* Makes the image a neat circle */
-  object-fit: cover; 
-/* Prevents the image from distoring */
-}
-
-/* Container adjustments */
-.image-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
+  background-color: #f7fafc; /* Matches your body background color */
 }
 
 /* Image adjustments */
@@ -486,9 +461,10 @@ nav .btn-signup:hover {
 
 /* New wrapper to group text elements on the right */
 .text-content-wrapper {
-  display: contents;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 100%;
   max-width: 100%;
   gap: 32px;
