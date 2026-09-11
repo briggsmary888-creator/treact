@@ -430,6 +430,12 @@ nav .btn-signup:hover {
   box-sizing: border-box;
 }
 
+.pricing-section {
+  display: grid;
+  grid-template-columns: center;
+  align-items: center;
+  text-align: center;
+}
 /* Forces theinner container to expand fully horizontally */
 .pricing-cards {
   display: grid !important;
