@@ -489,6 +489,23 @@ nav .btn-signup:hover {
   flex-shrink: 0;
 }
 
+/* Container adjustment */
+.image-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Ensure the image does not shrink */
+.image-section img {
+  flex-shrink: 0;
+}
+
+/* Suggested structure: Wrap text elements in a div */
+.content-wrapper {
+  flex-grow: 1;
+}
+
 /* New wrapper to group text elements on the right */
 .text-content-wrapper {
   display: flex;
