@@ -283,23 +283,16 @@ nav .btn-signup:hover {
   }
 }
 
-/* Container for the features section */
-.features-icons container {
+/* Update the parent container to stack items vertically */
+.features-section {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  width: 100%;
-  padding: 40px 20px;
+  flex-direction: column;
 }
 
-/* Section Main Heading */
-.features-section {
-  font-size: 15px;
-  color: #1e1e1e;
-  font-weight: 800;
-  margin-bottom: 15px;
+.features-icon-support,
+.features-icons {
+  flex: 0 0 calc(33.333% - 20px); /* Adjustthe 20px if your gap is different */
+  box-sizing: border-box;
 }
 
 .features-sectoin span {
@@ -309,7 +302,7 @@ nav .btn-signup:hover {
 /* Individual Feature Item Box */
 .feature-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start; /* Left-aligined content inside columns */
   text-align: left;
 }
@@ -317,8 +310,29 @@ nav .btn-signup:hover {
 /* Icon Styling Header Row */
 .features-icons-wrapper {
   display: flex;
-  align-items: center;
+  align-items: calc(33.333%);
   margin-bottom: 12px;
+}
+
+/* Container Layout */
+.features-icon-support {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Feature Item Layout */
+.feature-item, 
+.features-icon-shield, 
+.features-icon-reliable, 
+.features-icon-fast, 
+.features-icon-simple, 
+.features-icon-customize {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* Reponsive adjustment for tablets and mobile screes */
