@@ -1,3 +1,13 @@
+/* TREACT DESIGN SYSTEM TOKENS
+   Define custom colors matching Treact's vibrant, modern palette */
+:root {
+  --primary-500: #6415ff;
+  --primary-700: #5011cc;
+  --secondary-500: #7c8ba1;
+  --text-dark: #243e63;
+  --text-light: #7c8ba1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,16 +25,6 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-}
-
-/* TREACT DESIGN SYSTEM TOKENS
-   Define custom colors matching Treact's vibrant, modern palette */
-:root {
-  --primary-500: #6415ff;
-  --primary-700: #5011cc;
-  --secondary-500: #7c8ba1;
-  --text-dark: #243e63;
-  --text-light: #7c8ba1;
 }
 
 /* BASE ELEMENT OVERRIDES
@@ -107,12 +107,13 @@ body {
   gap: 40px; /* Aligns with internal section spacing */
 }
 
-nav a {
+nav a, 
+.nav-links a {
   text-decoration: none;
   color: #243e63;
   font-weight: 600;
   margin-left: 2rem;
-  font-size: 0.95;
+  font-size: 0.95rem;
   transition: color 0.2s;
 }
 
@@ -167,6 +168,7 @@ nav .btn-signup:hover {
 
 @media (max-width: 768px) {
   .features-section {
+    display: flex;
     flex-direction: column; /* Stacks image below or above text */
     text-align: center;
   }
@@ -290,30 +292,6 @@ nav .btn-signup:hover {
   }
 }
 
-/* Update the parent container to stack items vertically */
-.features-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.features-icon-support,
-.features-icons {
-  flex: 0 0 calc(33.333% - 20px); /* Adjustthe 20px if your gap is different */
-  box-sizing: border-box;
-}
-
-.features-sectoin span {
-    color: #2563eb;
-}
-
-/* Individual Feature Item Box */
-.feature-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start; /* Left-aligined content inside columns */
-  text-align: left;
-}
-
 /* Icon Styling Header Row */
 .features-icons-wrapper {
   display: flex;
@@ -327,19 +305,22 @@ nav .btn-signup:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  align-items: start;
 }
 
 /* Individual Feature Item Layout */
-.feature-item, 
+.feature-items, 
+.features-icon-support,
 .features-icon-shield, 
 .features-icon-reliable, 
 .features-icon-fast, 
 .features-icon-simple, 
 .features-icon-customize {
-  display: flex;
+  display: flex-box;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 15px;
 }
 
 /* Reponsive adjustment for tablets and mobile screes */
