@@ -100,6 +100,13 @@ body {
   margin-right: 0.5rem;
 }
 
+/* Apply to the parent container of .steps-section */
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Aligns with internal section spacing */
+}
+
 nav a {
   text-decoration: none;
   color: #243e63;
