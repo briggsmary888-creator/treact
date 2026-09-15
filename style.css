@@ -295,16 +295,25 @@ nav .btn-signup:hover {
 /* Icon Styling Header Row */
 .features-icons-wrapper {
   display: flex;
-  align-items: calc(33.333%);
+  -ms-flex-item-align: auto;
+  align-items: flex-start;
   margin-bottom: 12px;
+}
+
+.features-icon-support.ai-style-change-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px; /* Provides uniform spacing between elements */
 }
 
 /* Container Layout */
 .features-icon-support {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
+  gap: 2px;
+  padding: 2px;
   justify-content: space-between;
   align-items: start;
 }
