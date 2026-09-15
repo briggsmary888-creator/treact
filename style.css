@@ -260,7 +260,7 @@ nav .btn-signup:hover {
 
 /* Base layout Grid Configuration */
 .features-section {
-  display: flex;
+  display: contents;
   flex-direction: row;
   align-items: center;
 }
@@ -305,6 +305,7 @@ nav .btn-signup:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  justify-content: space-between;
   align-items: start;
 }
 
