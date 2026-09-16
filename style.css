@@ -8,6 +8,12 @@
   --text-light: #7c8ba1;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; /* Spacing between each section */
+}
+
 * {
   margin: 0;
   padding: 0;
