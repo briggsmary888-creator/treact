@@ -248,6 +248,21 @@ nav .btn-signup:hover {
   }
 }
 
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Ensure the header content spans the full width of the grid */
+.features-content {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 /* Individual Feature Item Layout */
 .feature-items, 
 .features-icon-support,
@@ -300,6 +315,29 @@ nav .btn-signup:hover {
     gap: 30px;
   }
 }
+
+/* Container */
+.steps-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically centers text relative to image */
+  gap: 40px;
+}
+
+/* New Wrapper for Text (Applied via Script) */
+.steps-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Takes up remaining space */
+  text-align: left;
+}
+
+/* Individual elements now have width: auto to fill the block */
+.steps-content-wrapper > * {
+  width: auto;
+  margin: 8px 0;
+}
+
 /* Container adjustments */
 .steps-section {
   display: flex;
