@@ -332,10 +332,17 @@ body {
   object-fit: cover;
 }
 
+/* Layout configuration for the parent container */
+.steps-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Split into two equal columns */
+  gap: 15px;                     /* Uniform spacing between image and text */
+  align-items: center;
+}
 
 .content-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
 }
 
