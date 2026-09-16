@@ -248,13 +248,14 @@ nav .btn-signup:hover {
   }
 }
 
-.features-content {
-  display: flex;
-  flex-direction: column;
+/* Option 2: Allow body to fill viewport and center the section */
+body {
+  width: 100%;
 }
 
-.features-content p {
-  order: -1; /* Moves the paragraph to the top */
+.features-section {
+  width: 627px;
+  margin: 0 auto;
 }
 
 /* Ensure a strict 3-column layout and consistent spacing */
