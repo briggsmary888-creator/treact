@@ -172,7 +172,7 @@ nav .btn-signup:hover {
 }
 
 /* Standardize icon positioning */
-.features-icon-support img {
+.features-icons img, h2, p {
   display: block;
   margin-bottom: 15px;
   justify-self: center; /* Ensures centering if grid cell is larger than image */
