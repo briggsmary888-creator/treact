@@ -397,6 +397,13 @@ body {
   }
 }
 
+/* Update children to span the full grid width */
+.pricing-section > h2,
+.pricing-section > p {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
 .pricing-section {
   display: flex;
   flex-direction: column;
