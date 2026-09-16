@@ -155,47 +155,6 @@ nav .btn-signup:hover {
   }
 }
 
-/* Apply to the main grid container */
-.features-icon-support {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  align-items: start;
-}
-
-/* Apply to each feature item/card */
-.features-icon-support > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Standardize icon positioning */
-.features-icons img, h2, p {
-  display: block;
-  margin-bottom: 15px;
-  justify-self: center; /* Ensures centering if grid cell is larger than image */
-}
-
-/* Styling the "Features" subtitle */
-.features-card h2:first-of-type {
-  color: #6366f1; /* Indigo color accent */
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 8px;
-}
-
-/* Styling the main heading */
-.features-card h2:nth-of-type(2) {
-  color: #1a202c; /* Dark gray */
-  font-size: 2.25rem;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 16px;
-}
-
 .cta-form {
   display: flex;
   position: relative;
@@ -262,13 +221,6 @@ nav .btn-signup:hover {
   }
 }
 
-/* Base layout Grid Configuration */
-.features-section {
-  display: contents;
-  flex-direction: row;
-  align-items: center;
-}
-
 @media (max-width: 968px) {
   .hero {
     flex-direction: column-reverse;
@@ -294,32 +246,6 @@ nav .btn-signup:hover {
     text-align: center;
     gap: 32px;
   }
-}
-
-/* Icon Styling Header Row */
-.features-icons-wrapper {
-  display: flex;
-  -ms-flex-item-align: auto;
-  align-items: flex-start;
-  margin-bottom: 12px;
-}
-
-.features-icon-support.ai-style-change-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 10px; /* Provides uniform spacing between elements */
-}
-
-/* Container Layout */
-.features-icon-support {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  padding: 2px;
-  justify-content: space-between;
-  align-items: start;
 }
 
 /* Individual Feature Item Layout */
