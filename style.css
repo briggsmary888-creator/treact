@@ -409,6 +409,13 @@ nav .btn-signup:hover {
   }
 }
 
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  text-align: center;
+}
+
 /* Suggested updates for the container */
 .pricing-section > div {
   display: flex;
