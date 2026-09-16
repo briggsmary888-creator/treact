@@ -248,6 +248,15 @@ nav .btn-signup:hover {
   }
 }
 
+.features-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-content p {
+  order: -1; /* Moves the paragraph to the top */
+}
+
 /* Ensure a strict 3-column layout and consistent spacing */
 .features-section {
   display: grid;
