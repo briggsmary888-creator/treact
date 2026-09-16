@@ -324,68 +324,41 @@ body {
   }
 }
 
-/* Container */
+/* Proposed CSS for the live page */
 .steps-section {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Vertically centers text relative to image */
-  gap: 40px;
+  align-items: stretch;
+  gap: 50px;
+  padding: 20px;
 }
 
-/* New Wrapper for Text (Applied via Script) */
-.steps-content-wrapper {
+.content-wrapper {
   display: flex;
   flex-direction: column;
-  flex: 1; /* Takes up remaining space */
-  text-align: left;
-}
-
-/* Individual elements now have width: auto to fill the block */
-.steps-content-wrapper > * {
-  width: auto;
-  margin: 8px 0;
-}
-
-/* Container adjustments */
-.steps-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-}
-
-/* Image resizing */
-.steps-section img {
-  width: 300px;
-  height: auto;
-  flex-shrink: 0;
-}
-
-/* Text content wrapper */
-.steps-content {
   flex: 1;
 }
 
-/* Proposed CSS Fix */
+/* Proposed CSS Adjustments */
 .value-section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
 }
 
-.text-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 16px; /* Vertical spacing between text elements */
+.value-content {
+  flex: 1 1 0;
+  padding: 0 20px;
 }
 
 .value-section img {
-  flex-shrink: 0;
-  max-width: 450px;
+  flex: 1 1 0;
+  width: 100%;
+  max-width: 100%;
   height: auto;
+  order: 2; /* Ensures image stays on the right if DOM order varies */
 }
 
 /* On smaller screens, stack the text and image vertically */
