@@ -324,14 +324,14 @@ body {
   }
 }
 
-/* Proposed CSS for the live page */
-.steps-section {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  gap: 50px;
-  padding: 20px;
+/* Positioning the image to span the full height of the text column */
+.steps-section img {
+  grid-row: 1 / span 10;          /* Spans all text rows in the second column */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
 
 .content-wrapper {
   display: flex;
