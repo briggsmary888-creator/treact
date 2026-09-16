@@ -358,6 +358,23 @@ nav .btn-signup:hover {
   flex: 1;
 }
 
+.value-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;    /* Vertically center text with image */
+  justify-content: center; /* Center the whole group horizontally */
+  gap: 40px;
+  height: auto;
+}
+
+.value-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  max-width: 500px; /* Keeps text block tidy */
+  text-align: left;
+}
+
 /* Layout adjustment for side-by-side display */
 .value-section {
   display: flex;
