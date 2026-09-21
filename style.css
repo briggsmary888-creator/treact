@@ -1,4 +1,14 @@
-/* TREACT DESIGN SYSTEM TOKENS
+/    -webkit-locale: "en";
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    --primary-500: #6415ff;
+    --primary-700: #5011cc;
+    --secondary-500: #7c8ba1;
+    --text-dark: #243e63;
+    --text-light: #7c8ba1;* TREACT DESIGN SYSTEM TOKENS
    Define custom colors matching Treact's vibrant, modern palette */
 :root {
   --primary-500: #6415ff;
