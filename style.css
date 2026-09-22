@@ -445,6 +445,12 @@ header {
   max-width: 576px;
   margin-right: 64px;
 }
+
+/* Potential fix for source stylesheet to remove the grid pattern */
+svg.quality__grid {
+    display: none !important;
+}
+
 .quality__description,
 .quality__img--wrapper {
   width: 50%;
